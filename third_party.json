@@ -1,0 +1,31 @@
+{
+  "version": "3.15.0",
+  "commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+  "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+  "notice": "docs/assets/vendor/GSAP-LICENSE.txt",
+  "files": [
+    {
+      "source": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/gsap.min.js",
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "path": "docs/assets/vendor/gsap.min.js"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/ScrollTrigger.min.js",
+      "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2",
+      "path": "docs/assets/vendor/ScrollTrigger.min.js"
+    },
+    {
+      "path": "docs/assets/fonts/Outfit.woff2",
+      "sha256": "ed629d88c2db8ace1b3ac85fbf1fe0223d7272defaa817d1955100101966f0fb",
+      "source": "https://github.com/google/fonts/tree/main/ofl/outfit",
+      "license": "SIL OFL1.1"
+    },
+    {
+      "path": "docs/assets/fonts/Fraunces.woff2",
+      "sha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8",
+      "source": "https://github.com/google/fonts/tree/main/ofl/fraunces",
+      "license": "SIL OFL1.1"
+    }
+  ],
+  "license_review": "Standard license permits use on this personal website; no visual animation builder is being offered. Proprietary notices retained. GSAP is not MIT."
+}
