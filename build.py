@@ -6,13 +6,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 ORIGIN = json.loads((ROOT / 'site.json').read_text())['origin']
 PROJECTS = [
-    ('rumbo-android', 'Rumbo', 'Kotlin · Compose · Room · Retrofit', '40865918522',
+    ('rumbo-android', 'Rumbo', 'Kotlin · Compose · Room · Retrofit', '40886717961',
      'A complete Android flow, including the moments when the source fails.',
      'Un flujo Android completo, también cuando falla la fuente de datos.',
      'Fictional trips, search, detail, favorites and local bookings. Inspect the REST boundary, read-only ViewModel state, Navigation and cached content during failures.',
      'Escapadas ficticias, búsqueda, detalle, favoritos y reservas locales. Frontera REST, estado de ViewModel de solo lectura, Navigation y caché durante los fallos.',
      '32 JVM tests · 7 emulator tests · optimized release checked', '32 tests JVM · 7 de emulador · release optimizada comprobada'),
-    ('bitacora-flutter', 'Bitácora', 'Flutter · Dart · Local persistence · ES/EN', '40874563980',
+    ('bitacora-flutter', 'Bitácora', 'Flutter · Dart · Local persistence · ES/EN', '40887125281',
      'Async work that keeps acknowledged state consistent.', 'Trabajo asíncrono con un estado guardado coherente.',
      'An original field-task board with Android flavors. Follow request generations, failed storage reads, acknowledged writes and English/Spanish resources.',
      'Tablero original de tareas con flavors Android. Generaciones de peticiones, fallos de lectura, escritura confirmada y recursos en español e inglés.',
