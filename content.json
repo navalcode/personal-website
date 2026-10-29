@@ -52,12 +52,12 @@
       "en": {
         "question": "When should an effect restart, and who releases its resources?",
         "body": "Effect keys, cleanup and callbacks that stay current without restarting work. Inspect LaunchedEffect, DisposableEffect and rememberUpdatedState.",
-        "evidence": "4 JVM tests · 4 instrumented tests · verified CI"
+        "evidence": "4 JVM tests · 9 local Android tests · CI build/lint"
       },
       "es": {
         "question": "¿Cuándo reinicia un efecto y quién libera sus recursos?",
         "body": "Claves de efectos, limpieza y callbacks actualizados sin reiniciar trabajo. LaunchedEffect, DisposableEffect y rememberUpdatedState.",
-        "evidence": "4 tests JVM · 4 instrumentados · CI comprobada"
+        "evidence": "4 tests JVM · 9 nativos locales · CI build/lint"
       }
     },
     {
