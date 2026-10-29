@@ -82,12 +82,12 @@
       "en": {
         "question": "Connect acceptance criteria to actual test evidence.",
         "body": "Original CLI and optional MCP adapter. Trace JUnit to a versioned specification and reject stale proposals. Keep human review and evidence provenance explicit. EN/ES summaries preserve machine statuses and hashes.",
-        "evidence": "40 checker/configuration tests · 5 sample tests · 4 MCP cases"
+        "evidence": "44 checker/configuration/presentation tests · 5 sample tests · 4 MCP cases"
       },
       "es": {
         "question": "Conectar aceptación y evidencia de pruebas real.",
         "body": "CLI original y adaptador MCP opcional. Relaciona JUnit con una especificación versionada y rechaza propuestas obsoletas, conservando revisión humana y límites de procedencia. Resúmenes ES/EN sin cambiar estados o hashes.",
-        "evidence": "40 tests del checker/configuración · 5 del ejemplo · 4 casos MCP"
+        "evidence": "44 tests del checker/configuración/presentación · 5 del ejemplo · 4 casos MCP"
       }
     },
     {
@@ -97,12 +97,12 @@
       "en": {
         "question": "A connection can fail independently of its owner.",
         "body": "A fictional gateway demonstrates bounded reconnection, late callbacks, resource cleanup and per-metric freshness. Host-side simulation, without Android Car or vehicle hardware.",
-        "evidence": "20 JVM tests · executable demo · verified CI"
+        "evidence": "23 JVM tests · executable demo · verified CI"
       },
       "es": {
         "question": "Una conexión puede fallar sin cancelar a su propietario.",
         "body": "Proveedor ficticio con reconexión acotada, callbacks tardíos, liberación de recursos y antigüedad por métrica. Simulación en el host, sin Android Car o hardware real.",
-        "evidence": "20 tests JVM · demo ejecutable · CI comprobada"
+        "evidence": "23 tests JVM · demo ejecutable · CI comprobada"
       }
     },
     {
@@ -112,12 +112,12 @@
       "en": {
         "question": "A valid report is not proof of a precise receiver.",
         "body": "Bounded CSV parsing, exact reference pairing, fix gaps and apparent jumps. An original Python/C boundary uses a spherical model and synthetic data, with no device acquisition.",
-        "evidence": "25 tests · native build · Linux/macOS CI"
+        "evidence": "27 tests · native build · Linux/macOS CI"
       },
       "es": {
         "question": "Un reporte válido no prueba la precisión de un receptor.",
         "body": "CSV acotado, emparejado exacto, pérdida de fix, huecos y saltos aparentes. Frontera Python/C original, modelo esférico y datos sintéticos, sin adquisición del dispositivo.",
-        "evidence": "25 tests · build nativo · CI Linux/macOS"
+        "evidence": "27 tests · build nativo · CI Linux/macOS"
       }
     }
   ],
