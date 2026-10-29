@@ -1,6 +1,7 @@
 """Check generated pages, local resources and declared evidence links."""
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlsplit
 import build
@@ -59,6 +60,7 @@ def check():
     pairs = [('body','#192a30','#f6f7f2'),('muted','#4d6066','#f6f7f2'),('accent','#006b59','#f6f7f2'),('tags','#284a41','#e7f0e8'),('capture','#203f56','#dfe9ef'),('button','#ffffff','#192a30')]
     contrast={}
     css=(ROOT/'docs/styles.css').read_text()
+    css=re.sub(r'#([0-9a-fA-F]{3})(?![0-9a-fA-F])',lambda match:'#'+''.join(char*2 for char in match[1]),css)
     for name,fg,bg in pairs:
         assert fg.lower() in css.lower() and bg.lower() in css.lower(), 'contrast pair absent from CSS'
         values=sorted([luminance(fg),luminance(bg)])
