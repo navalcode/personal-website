@@ -51,8 +51,8 @@ PROJECTS = [
 
 COPY = {
     'en': dict(other='ES', other_file='es.html', skip='Skip to content', work='Projects', method='Approach', profile='GitHub profile',
-               eyebrow='Manuel Naval / Android & mobile engineering', title='Android engineering.<br>From state to delivery.',
-               intro='I develop and maintain mobile software, with Android as my main focus. These examples make my decisions about state, integration, concurrency and testing visible in working code.',
+               eyebrow='Manuel Naval / Mobile engineering', title='Mobile engineering.<br>From state to delivery.',
+               intro='I develop and maintain mobile applications, working on architecture, state, integration and testing. The current examples cover Android and Flutter; native iOS is the next extension.',
                cta='Explore the projects', start='Start with Rumbo', note='A self-contained Android example. Follow a feature through its data boundary, presentation state and failure tests.',
                apps='Two complete mobile examples', apps_intro='Original applications with fictional data, explicit failure states and documented validation.',
                android='The behavior behind the interface', android_intro='Focused Android labs for concurrency, effects, ownership and testable state.',
@@ -61,12 +61,12 @@ COPY = {
                approach='AI-assisted engineering,<br>with an explicit contract.', approach_body='I work with reusable context, skills, MCP tools and project terminology. A specification connects the problem to behavior, decisions and verification, so a person or a new agent session can continue with reliable context.',
                approach_link='Read the working SDD example',
                steps=[('Define the boundary','State the user need, constraints and unknowns.'),('Describe acceptance','Include failures, cancellation and recovery.'),('Implement and review','Inspect the code, compare alternatives and keep changes reviewable.'),('Keep the evidence','Run meaningful checks and record what they can establish.')],
-               scope_title='Read each result at its own scope', scope_body='A unit test, emulator journey and physical-device measurement answer different questions. The repositories record commands, actual results and remaining limits. New demos were built with AI assistance and reviewed through code and executed checks.',
+               scope_title='Growing across mobile platforms', scope_body='Android and Flutter have runnable examples. Native iOS will grow through a Swift state and concurrency core, then SwiftUI, persistence and platform checks. The roadmap keeps planned work separate from executed validation.', roadmap='Read the mobile roadmap',
                history_title='Earlier work stays in context', history_body='GitHub also contains earlier Android, Flutter, Java and web exercises. Their READMEs explain the scope, preserve original notes and credit shared or upstream work.',
-               history_link='Browse the GitHub profile', footer='Manuel Naval · Original examples and technical decisions', language_name='Español', description='Android and mobile engineering by Manuel Naval. Kotlin, Compose, Flutter, AI-assisted engineering and executable technical evidence.'),
+               history_link='Browse the GitHub profile', footer='Manuel Naval · Mobile engineering', language_name='Español', description='Mobile engineering by Manuel Naval. Android, Kotlin, Flutter, architecture, testing and a gradual path to native iOS.'),
     'es': dict(other='EN', other_file='index.html', skip='Saltar al contenido', work='Proyectos', method='Método', profile='Perfil GitHub',
-               eyebrow='Manuel Naval / Ingeniería Android y móvil', title='Ingeniería Android.<br>Del estado a la entrega.',
-               intro='Desarrollo y mantengo software móvil, con Android como especialidad principal. Estos ejemplos muestran mis decisiones sobre estado, integración, concurrencia y pruebas mediante código que se puede ejecutar.',
+               eyebrow='Manuel Naval / Ingeniería móvil', title='Ingeniería móvil.<br>Del estado a la entrega.',
+               intro='Desarrollo y mantengo aplicaciones móviles, trabajando en arquitectura, estado, integración y pruebas. Los ejemplos actuales cubren Android y Flutter; iOS nativo es la siguiente ampliación.',
                cta='Explorar los proyectos', start='Empieza por Rumbo', note='Un ejemplo Android autónomo. Sigue una funcionalidad por su frontera de datos, estado de presentación y pruebas de fallo.',
                apps='Dos ejemplos móviles completos', apps_intro='Aplicaciones originales con datos ficticios, estados de fallo explícitos y validación documentada.',
                android='El comportamiento tras la interfaz', android_intro='Laboratorios Android centrados en concurrencia, efectos, propiedad de recursos y estado testeable.',
@@ -75,9 +75,9 @@ COPY = {
                approach='Ingeniería asistida por IA,<br>con un contrato explícito.', approach_body='Trabajo con contexto reutilizable, skills, herramientas MCP y terminología de proyecto. La especificación conecta el problema con comportamiento, decisiones y comprobación para que otra persona o sesión de un agente pueda continuar con contexto fiable.',
                approach_link='Ver el ejemplo SDD ejecutable',
                steps=[('Definir los límites','Necesidad del usuario, restricciones e incógnitas.'),('Describir la aceptación','Incluir fallos, cancelación y recuperación.'),('Implementar y revisar','Leer el código, comparar alternativas y preparar cambios revisables.'),('Conservar la evidencia','Ejecutar comprobaciones útiles y registrar qué permiten concluir.')],
-               scope_title='Cada resultado tiene su alcance', scope_body='Un test unitario, un recorrido en emulador y una medición física responden preguntas distintas. Los repositorios conservan comandos, resultados reales y límites. Las demos nuevas se construyeron con asistencia de IA y revisión mediante código y comprobaciones ejecutadas.',
+               scope_title='Ampliación entre plataformas móviles', scope_body='Android y Flutter tienen ejemplos ejecutables. iOS nativo crecerá con un núcleo Swift de estado y concurrencia, seguido de SwiftUI, persistencia y comprobaciones de plataforma. La hoja de ruta distingue el trabajo previsto de la validación ejecutada.', roadmap='Ver la hoja de ruta móvil',
                history_title='El trabajo anterior conserva su contexto', history_body='GitHub también conserva ejercicios anteriores de Android, Flutter, Java y web. Sus README explican el alcance, mantienen las notas originales y atribuyen el trabajo compartido o de terceros.',
-               history_link='Explorar el perfil GitHub', footer='Manuel Naval · Ejemplos originales y decisiones técnicas', language_name='English', description='Ingeniería Android y móvil de Manuel Naval. Kotlin, Compose, Flutter, IA aplicada y evidencia técnica ejecutable.'),
+               history_link='Explorar el perfil GitHub', footer='Manuel Naval · Ingeniería móvil', language_name='English', description='Ingeniería móvil de Manuel Naval. Android, Kotlin, Flutter, arquitectura, pruebas y ampliación gradual a iOS nativo.'),
 }
 
 
@@ -86,7 +86,7 @@ def render(language):
     es = language == 'es'
     filename = 'es.html' if es else 'index.html'
     profile = 'https://github.com/navalcode' + ('/navalcode/blob/main/README.es.md' if es else '')
-    page_title = 'Manuel Naval · Ingeniería Android y móvil' if es else 'Manuel Naval · Android & mobile engineering'
+    page_title = 'Manuel Naval · Ingeniería móvil' if es else 'Manuel Naval · Mobile engineering'
     canonical = ''
     if ORIGIN:
         origin = ORIGIN.rstrip('/') + '/'
@@ -115,7 +115,7 @@ def render(language):
 {section('02',c['android'],c['android_intro'],PROJECTS[2:5],2)}
 {section('03',c['integrations'],c['integrations_intro'],PROJECTS[5:],5)}
 <section class="section approach" id="approach"><div><span class="section-number">04</span><h2>{c['approach']}</h2><p>{escape(c['approach_body'])}</p><div class="links"><a href="https://github.com/navalcode/spec-evidence-lab">{escape(c['approach_link'])} ↗</a></div></div><ol class="steps">{''.join(f'<li><div><strong>{escape(title)}</strong><span>{escape(body)}</span></div></li>' for title,body in c['steps'])}</ol></section>
-<section class="section"><div class="scope"><div><h3>{escape(c['scope_title'])}</h3><p>{escape(c['scope_body'])}</p></div><div><h3>{escape(c['history_title'])}</h3><p>{escape(c['history_body'])}</p><div class="links"><a href="{profile}">{escape(c['history_link'])} ↗</a></div></div></div></section></main>
+<section class="section"><div class="scope"><div><h3>{escape(c['scope_title'])}</h3><p>{escape(c['scope_body'])}</p><div class="links"><a href="https://github.com/navalcode/navalcode/blob/main/MOBILE_ROADMAP{'.es' if es else ''}.md">{escape(c['roadmap'])} ↗</a></div></div><div><h3>{escape(c['history_title'])}</h3><p>{escape(c['history_body'])}</p><div class="links"><a href="{profile}">{escape(c['history_link'])} ↗</a></div></div></div></section></main>
 <footer class="footer"><div class="wrap"><p>{escape(c['footer'])}</p><p><a href="https://github.com/navalcode">GitHub</a> · <a href="{c['other_file']}" lang="{'en' if es else 'es'}">{c['language_name']}</a></p></div></footer></body></html>
 '''
 
