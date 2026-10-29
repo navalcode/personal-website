@@ -1,16 +1,23 @@
-# Manuel Naval portfolio
+# Personal website
 
-[Español](README.es.md)
+[Español](README.es.md) · [Website](https://navalcode.github.io/personal-website/) · [GitHub](https://github.com/navalcode)
 
-English-first static portfolio with a full Spanish page, original CSS and links to executable public evidence. No JavaScript, tracking, accounts, backend, external fonts or runtime packages.
+Source for my personal website. GitHub is the main place to read my work; the site offers a visual introduction and links to the same repositories.
+
+## Develop
+
+The site is static HTML and CSS. Python generates the English and Spanish pages from the content in `build.py`. There are no runtime packages, external fonts or analytics.
 
 ```sh
 python3 build.py
+python3 check.py
 python3 -m http.server 8048 --directory docs --bind 127.0.0.1
 ```
 
-`build.py` generates both pages from reviewed bilingual content. GitHub Pages serves only `docs/`; project source and this README are not runtime assets. The source branch and `/docs` path are configured in the dedicated repository’s Pages settings. Deployment is independent of existing application/authentication resources.
+GitHub Pages publishes `main` → `/docs`. `site.json` defines canonical URLs. The previous `/portfolio/` URLs redirect through compatibility pages in `navalcode.github.io`; application association, authentication and privacy resources are maintained separately.
 
-Project descriptions deliberately distinguish original demos, historical labs, simulated data and physical validation. CI links identify actual executed runs. The Bitácora image is an actual emulator capture from the original public demo; the Rumbo graphic is an implementation diagram.
+## Content
 
-Original code, copy, design and image: [MIT](LICENSE), Manuel Naval, 2026. Linked historical repositories retain their own licenses and attribution.
+Project descriptions link to source and executed checks. The Bitácora image is an emulator screenshot; the Rumbo graphic is an implementation diagram. Each project documents its own validation scope.
+
+Original source, writing, design and image: [MIT](LICENSE), Manuel Naval, 2026. Linked projects retain their own licenses and attribution.

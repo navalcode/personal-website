@@ -9,19 +9,19 @@
   },
   {
     "path": "README.md",
-    "sha256": "966fdc3da0b19dc6d4296242bb615c444829723c7d1fbd74966c03b29d2deab0"
+    "sha256": "0b592a463c6014b09b13996bcd45ea04121029c8b811b9ee9c12e924cb304b41"
   },
   {
     "path": "README.es.md",
-    "sha256": "d291248c2b54627751c741c1740909b52293061678024742d4768b692fedc1be"
+    "sha256": "38ee25033860c5b9908474fdb2d8762877ffbfffcd5b0a6f74113a9274096431"
   },
   {
     "path": "site.json",
-    "sha256": "969a2d3e19df1fc54fe2eefbbf897c1885488a1ec7dc23e2e8e36bea7a11103b"
+    "sha256": "e30e203372af72dba427a9a169cad3fc734213a44b5e2bc2cb70c7807102221a"
   },
   {
     "path": "build.py",
-    "sha256": "3207f9319a4ad6351f891ff0a3ff5618467c941e00c9cb6be779af61d821ae28"
+    "sha256": "3c579f32f3e3baddd5e591bb46525e85be6da0c72a20784bd77797566de44dc7"
   },
   {
     "path": "check.py",
@@ -29,11 +29,11 @@
   },
   {
     "path": "docs/index.html",
-    "sha256": "abf4e93ff4ea8cb6200527a9db5bdbee1337e8b7abb3446d0315deb22e0eba50"
+    "sha256": "333809fc547bac015e4127877bdb715f59f3cbfbcc917e315be0be174d84c630"
   },
   {
     "path": "docs/es.html",
-    "sha256": "d3364cbf37a726d8aa966798128b78532e3633ea8f3f05e394f269352a3fa168"
+    "sha256": "30773cf8eaa4fb57c08febaf5fe9fd2f01bb1cadf5104f7d5bea508e29ebcc6c"
   },
   {
     "path": "docs/styles.css",
