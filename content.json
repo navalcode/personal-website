@@ -37,12 +37,12 @@
       "en": {
         "question": "Who owns the work, and what happens when it fails?",
         "body": "Structured concurrency, launch/async, exception propagation and Flow operators. Predict the timeline, then compare the implementation and tests.",
-        "evidence": "9 JVM tests · build and lint verified"
+        "evidence": "10 JVM tests · 4 local Android tests · CI build/lint"
       },
       "es": {
         "question": "¿Quién es dueño del trabajo y qué ocurre cuando falla?",
         "body": "Concurrencia estructurada, launch/async, propagación de errores y operadores Flow. Anticipa la secuencia y contrástala con código y tests.",
-        "evidence": "9 tests JVM · build y lint comprobados"
+        "evidence": "10 tests JVM · 4 nativos locales · CI build/lint"
       }
     },
     {
@@ -67,12 +67,12 @@
       "en": {
         "question": "Make cancellation and latest-query behavior observable.",
         "body": "Injectable dispatchers, fakes and virtual time for ViewModel state, replacement of asynchronous work and failure recovery.",
-        "evidence": "9 JVM tests · build and lint verified"
+        "evidence": "9 JVM tests · 3 local Android tests · CI build/lint"
       },
       "es": {
         "question": "Hacer observables la cancelación y la última consulta.",
         "body": "Dispatchers inyectables, fakes y tiempo virtual para estado de ViewModel, sustitución de trabajo asíncrono y recuperación.",
-        "evidence": "9 tests JVM · build y lint comprobados"
+        "evidence": "9 tests JVM · 3 nativos locales · CI build/lint"
       }
     },
     {

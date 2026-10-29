@@ -33,7 +33,7 @@
   },
   {
     "path": "content.json",
-    "sha256": "737ff0523a760496dff47f81043a01a206b1ef98a48755acf75e64cb4cd57abe"
+    "sha256": "33cd2897dbef1312222260b92519c504427e5e3077fe36aade3bdac62a283aa9"
   },
   {
     "path": "build.py",
@@ -45,11 +45,11 @@
   },
   {
     "path": "docs/index.html",
-    "sha256": "135217b0be32846038e879fc89e3d1525564c06c893ef6fba27721f23d9bae1b"
+    "sha256": "b69b14c103ce332cae0e9981ed4f9ce1c63171241a7508d1d0d785202994dee0"
   },
   {
     "path": "docs/es.html",
-    "sha256": "36ad4fdac438e7aa72ca0cc279cea90b6d0b5a86fc3e427d62ace70c292711fd"
+    "sha256": "ad5793a9feefe3f60cff06f98ce09977656dafee6dd9b9f8e7034ffcee501c5c"
   },
   {
     "path": "docs/styles.css",
