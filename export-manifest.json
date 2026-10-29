@@ -1,0 +1,54 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "fd3b61e525ea9742fb3a9d4c6f05fca31e5e13249273027c3a6bdeae18ca64c6"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "8ee98a68db08740852b491de91922961bb928aaa13f9897c078a0e6eb3e1218a"
+  },
+  {
+    "path": "README.md",
+    "sha256": "966fdc3da0b19dc6d4296242bb615c444829723c7d1fbd74966c03b29d2deab0"
+  },
+  {
+    "path": "README.es.md",
+    "sha256": "d291248c2b54627751c741c1740909b52293061678024742d4768b692fedc1be"
+  },
+  {
+    "path": "site.json",
+    "sha256": "59437e13b14d193561af47a122b95485fecfc7058b23cbd883a1a1e4c18d9e99"
+  },
+  {
+    "path": "build.py",
+    "sha256": "dd2d5a90f26cd8da05ca130716afb7ce40d766a811a3e39badfd38fb5cdcbe81"
+  },
+  {
+    "path": "check.py",
+    "sha256": "988ef082c344063bd50b5102d3a430651ea75078e768b1f8898bc85e99c45065"
+  },
+  {
+    "path": "docs/index.html",
+    "sha256": "39e04729eae2f392fe716607f0694d688739225f8a3da4a28c114a068da990e3"
+  },
+  {
+    "path": "docs/es.html",
+    "sha256": "070b3af22db3a6949235fe6d6c547d7cd2436101163917c04e09ffe622f23297"
+  },
+  {
+    "path": "docs/styles.css",
+    "sha256": "5051dab807322501ab8606d9f8ade9b42a742bbc232abfd04e87d9f3308d22bb"
+  },
+  {
+    "path": "docs/.nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/assets/bitacora-board.png",
+    "sha256": "78723da723f7057e4e52f035c2ed5343074f702a2368e5e46712c70ffaef459e"
+  },
+  {
+    "path": "docs/assets/favicon.svg",
+    "sha256": "a352f7365b73b7e86ef07009670904ef789b18e7c93b3858017cbda4274f61d7"
+  }
+]
