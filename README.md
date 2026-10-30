@@ -22,7 +22,7 @@ Edit content, renderer, CSS or the optional `docs/motion.js`, then regenerate an
 
 HTML owns navigation, links, landmarks and native `details/summary` disclosures. GSAP only scales/fades media and pins the lab context on sufficiently wide/tall desktop windows. `prefers-reduced-motion` disables those effects and CSS movement. Content and disclosures remain usable without JavaScript. Fonts and vendor notices are preserved separately from the original MIT source.
 
-Local app checks cited by the redesign: Rumbo: 32 JVM/8 emulator checks and Bitácora: 23 controller/widget checks plus native persistence. Each repository documents validation limits. Follow each project’s CI link for its current runs. Native iOS remains a gradual roadmap, not an implemented capability.
+Local app checks cited by the redesign: Rumbo: 32 JVM/8 emulator checks and Bitácora: 26 controller/widget checks plus native persistence. Each repository documents validation limits. Follow each project’s CI link for its current runs. Native iOS remains a gradual roadmap, not an implemented capability.
 
 ## Hosting
 

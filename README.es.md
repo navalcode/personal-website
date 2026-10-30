@@ -22,7 +22,7 @@ Modifica el contenido, el generador de HTML, el CSS o el `docs/motion.js` opcion
 
 HTML resuelve la navegación, los enlaces, las regiones de contenido y los controles nativos `details/summary`. GSAP ajusta la escala y la opacidad de las imágenes y fija la introducción del índice en ventanas de escritorio con espacio suficiente. `prefers-reduced-motion` desactiva esos efectos y el movimiento CSS. El contenido y las secciones expandibles siguen funcionando sin JavaScript. Las fuentes y GSAP conservan avisos/licencias propios, separados del código original MIT.
 
-Comprobaciones locales citadas por el rediseño: Rumbo: 32 JVM/8 de emulador y Bitácora: 23 de controlador/widgets más persistencia nativa. Cada repositorio documenta sus límites. Los enlaces a CI llevan a las ejecuciones actuales de cada proyecto. iOS nativo sigue siendo una ampliación gradual planificada.
+Comprobaciones locales citadas por el rediseño: Rumbo: 32 JVM/8 de emulador y Bitácora: 26 de controlador/widgets más persistencia nativa. Cada repositorio documenta sus límites. Los enlaces a CI llevan a las ejecuciones actuales de cada proyecto. iOS nativo sigue siendo una ampliación gradual planificada.
 
 ## Alojamiento
 
