@@ -112,12 +112,12 @@
       "en": {
         "question": "Find missing fixes and apparent position jumps.",
         "body": "Read bounded CSV input, match samples with reference coordinates and report gaps or apparent jumps. A Python/C implementation uses a spherical distance model and synthetic data. It does not acquire positions from a device.",
-        "evidence": "27 tests · native build · Linux/macOS CI"
+        "evidence": "28 tests · native build · Linux/macOS CI"
       },
       "es": {
         "question": "Detecta muestras sin posición y saltos aparentes.",
         "body": "Lee CSV con límites de tamaño, compara muestras con coordenadas de referencia y señala huecos o saltos aparentes. La implementación Python/C usa un modelo esférico de distancia y datos sintéticos. No obtiene posiciones de un dispositivo.",
-        "evidence": "27 pruebas · compilación C · CI Linux/macOS"
+        "evidence": "28 pruebas · compilación C · CI Linux/macOS"
       }
     }
   ],
