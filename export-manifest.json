@@ -4,111 +4,27 @@
     "sha256": "fd3b61e525ea9742fb3a9d4c6f05fca31e5e13249273027c3a6bdeae18ca64c6"
   },
   {
-    "path": "LICENSE",
-    "sha256": "8ee98a68db08740852b491de91922961bb928aaa13f9897c078a0e6eb3e1218a"
-  },
-  {
     "path": "README.md",
-    "sha256": "bac56933a00906be9df2a25fb2e37b55c3f4f27c1ed1a27b13bfc991d0983d8b"
+    "sha256": "5fd8ffb33bcc75d37426bc39f5af003a5d94a356e1e3f94380cd2817da523afc"
   },
   {
     "path": "README.es.md",
-    "sha256": "3b6b0de4f20ae6def30315bf606e31997f4fbd4322f82b525a1c867e20b26657"
+    "sha256": "42233ae48dd784cb7f4a5c479ce9a3346c9ffff7034a9417867e0bb1b8b846a3"
   },
   {
     "path": "DESIGN.md",
-    "sha256": "a5338a0c79546e9c38d99a67b5707ab74a684808a2433418230575a9ed17fae9"
-  },
-  {
-    "path": "THIRD_PARTY.md",
-    "sha256": "2cb923d8fb875f8f833bf75a503e1bb2df21a5a57f7a562519d578fed8016457"
-  },
-  {
-    "path": "third_party.json",
-    "sha256": "dcb597e44b7bb364e46922d7da0aaede91b265e48e63ecf6d6e43cac086f3557"
-  },
-  {
-    "path": "site.json",
-    "sha256": "e30e203372af72dba427a9a169cad3fc734213a44b5e2bc2cb70c7807102221a"
+    "sha256": "cb17860ecb7d7803180ceb6265dc56bd325e426885d76e72298c08b2ff6dc437"
   },
   {
     "path": "content.json",
-    "sha256": "33cd2897dbef1312222260b92519c504427e5e3077fe36aade3bdac62a283aa9"
-  },
-  {
-    "path": "build.py",
-    "sha256": "846ca624a0ffa795cdd559f4a53c99d73b79b34dc3b0291f8c6b3d9de784f1d5"
-  },
-  {
-    "path": "check.py",
-    "sha256": "6319239444ce32665b20bea3857c5f92ec224b69a5b9854683fc060ffab1e439"
+    "sha256": "34406940de74032b8cd848283bdb0a22529bbbb942525bda28c2997d1d562b08"
   },
   {
     "path": "docs/index.html",
-    "sha256": "b69b14c103ce332cae0e9981ed4f9ce1c63171241a7508d1d0d785202994dee0"
+    "sha256": "77370a315d9cd3435b7c52f3001f428f1fe9fd0174a5becb1798d7f9ed7d67d5"
   },
   {
     "path": "docs/es.html",
-    "sha256": "ad5793a9feefe3f60cff06f98ce09977656dafee6dd9b9f8e7034ffcee501c5c"
-  },
-  {
-    "path": "docs/styles.css",
-    "sha256": "224b7eb7bd4d81c3c7394fa6cc75e03fe81a32aa80a09d6aef81291e45ebde73"
-  },
-  {
-    "path": "docs/motion.js",
-    "sha256": "7645633297ec4af3a6773d60eabd1e6b5816142910263ac0914e0124dc89584e"
-  },
-  {
-    "path": "docs/.nojekyll",
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  },
-  {
-    "path": "docs/assets/bitacora-board.png",
-    "sha256": "768f293a487dc4c4de2fd80c479df60fb400543d80ae26be8194b7b399e42d05"
-  },
-  {
-    "path": "docs/assets/bitacora-detail.png",
-    "sha256": "238859d63f319c888ee06aee5d2d52581bbfb8ef23b2d544dddddc37ddb14547"
-  },
-  {
-    "path": "docs/assets/rumbo-explore.png",
-    "sha256": "9f42565a03a918dcf2c606366d3201c5b9436c3c971c49411ed6da8cf7c1e4d8"
-  },
-  {
-    "path": "docs/assets/rumbo-offline.png",
-    "sha256": "44ea46e26e1de832b67163de99f02aa1593fd77c1a183fe9e50798f318545c3b"
-  },
-  {
-    "path": "docs/assets/favicon.svg",
-    "sha256": "eae10160a2d30ea68b815f58593f554c2eca15464b74ff8516531f8b3146e5f5"
-  },
-  {
-    "path": "docs/assets/fonts/Outfit.woff2",
-    "sha256": "ed629d88c2db8ace1b3ac85fbf1fe0223d7272defaa817d1955100101966f0fb"
-  },
-  {
-    "path": "docs/assets/fonts/Fraunces.woff2",
-    "sha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8"
-  },
-  {
-    "path": "docs/assets/fonts/Outfit-OFL.txt",
-    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
-  },
-  {
-    "path": "docs/assets/fonts/Fraunces-OFL.txt",
-    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
-  },
-  {
-    "path": "docs/assets/vendor/gsap.min.js",
-    "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
-  },
-  {
-    "path": "docs/assets/vendor/ScrollTrigger.min.js",
-    "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
-  },
-  {
-    "path": "docs/assets/vendor/GSAP-LICENSE.txt",
-    "sha256": "e84ef81eec4410a3c552718fc35233f835d0899002d97f9a6302666741acde92"
+    "sha256": "e992db7ca3cc1568036c0aedb0a49160e7d1d6873aa0488f65cae3b0a9723441"
   }
 ]

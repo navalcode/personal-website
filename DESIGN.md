@@ -9,3 +9,7 @@ Use original app captures and Canvas illustrations, not generated concepts as ru
 HTML owns links, landmarks, reading order and native details/summary controls. Keep a visible keyboard focus and skip link. JavaScript is an optional presentation layer: local GSAP/ScrollTrigger gently scale/fade media and pin the lab context only on sufficiently wide/tall desktop windows. Reduced motion removes both effects and CSS movement. No scroll interception, hidden content dependency, third-party runtime requests or font CDN.
 
 Preflight checks include EN/ES parity, project/evidence links, local assets, contrast, keyboard/disclosures, 1366×768 hero,360px reflow, no-JS content, reduced-motion behavior and console errors. Capture the actual result; a reference image is not verification.
+
+## Copy review · 30 October 2026
+
+The existing layouts and assets are retained. The introduction names Android and Flutter directly. Case headings describe a behavior visible in the examples; the lab summaries explain what to run or inspect. Spanish is written for its reader rather than copying English sentence shapes. Technical terms remain where they identify code, while captions and actions use ordinary language. Native iOS remains planned. Text changes must be checked for wrapping, navigation and disclosure behavior at desktop and mobile widths.

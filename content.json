@@ -5,13 +5,13 @@
       "title": "Rumbo",
       "stack": "Kotlin · Compose · Room · Retrofit",
       "en": {
-        "question": "A failed refresh should not end the journey.",
-        "body": "A fictional catalogue. A locally intercepted REST contract. Room persistence keeps content usable when the source fails.",
+        "question": "Browse saved trips when a refresh fails.",
+        "body": "A fictional trip catalogue built with Compose and Retrofit. Responses are simulated locally; Room keeps the last saved catalogue available when a refresh fails.",
         "evidence": "32 JVM checks · 8 emulator checks"
       },
       "es": {
-        "question": "Un fallo de actualización no debería terminar el viaje.",
-        "body": "Catálogo ficticio. Contrato REST interceptado localmente. La persistencia con Room permite seguir consultando el contenido cuando falla la fuente.",
+        "question": "Consulta las escapadas guardadas aunque falle la actualización.",
+        "body": "Catálogo ficticio de escapadas con Compose y Retrofit. Las respuestas se simulan en la app; Room conserva el último catálogo guardado si falla la actualización.",
         "evidence": "32 pruebas JVM · 8 en emulador"
       }
     },
@@ -20,14 +20,14 @@
       "title": "Bitácora",
       "stack": "Flutter · Dart · Local persistence · ES/EN",
       "en": {
-        "question": "A saved task should stay saved.",
-        "body": "Six fictional field tasks. Completion appears only after storage confirms it. A failed read blocks edits, so unknown state is never overwritten.",
-        "evidence": "23 controller/widget checks · native persistence journey"
+        "question": "Complete a task and keep the change after a restart.",
+        "body": "Six fictional field tasks. Completion appears after storage confirms the change. If reading saved tasks fails, editing stays disabled until a successful retry.",
+        "evidence": "23 controller/widget tests · Android persistence checks"
       },
       "es": {
-        "question": "Una tarea guardada debe seguir guardada.",
-        "body": "Seis tareas ficticias de campo. La tarea aparece completada cuando el almacenamiento lo confirma. Un fallo de lectura bloquea las ediciones para no sobrescribir un estado desconocido.",
-        "evidence": "23 pruebas de controlador/widgets · persistencia nativa"
+        "question": "Completa una tarea y conserva el cambio al reiniciar.",
+        "body": "Seis tareas ficticias de campo. La tarea aparece completada después de confirmar el guardado. Si falla la lectura de los datos, la edición queda bloqueada hasta que se recuperan.",
+        "evidence": "23 pruebas de controlador y widgets · persistencia en Android"
       }
     },
     {
@@ -35,14 +35,14 @@
       "title": "Coroutine Lab",
       "stack": "Kotlin · Coroutines · Flow",
       "en": {
-        "question": "Who owns the work, and what happens when it fails?",
-        "body": "Structured concurrency, launch/async, exception propagation and Flow operators. Predict the timeline, then compare the implementation and tests.",
+        "question": "Follow coroutine lifetimes, cancellation and errors.",
+        "body": "Run examples of launch/async, exception propagation and Flow operators. Predict the sequence of events, then compare it with the trace and tests.",
         "evidence": "10 JVM tests · 4 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "¿Quién es dueño del trabajo y qué ocurre cuando falla?",
-        "body": "Concurrencia estructurada, launch/async, propagación de errores y operadores Flow. Anticipa la secuencia y contrástala con código y tests.",
-        "evidence": "10 tests JVM · 4 nativos locales · CI build/lint"
+        "question": "Sigue el ciclo de vida, la cancelación y los errores de las coroutines.",
+        "body": "Ejecuta ejemplos de launch/async, propagación de excepciones y operadores Flow. Anticipa la secuencia de eventos y compárala con las trazas y las pruebas.",
+        "evidence": "10 pruebas JVM · 4 Android locales · build/lint en CI"
       }
     },
     {
@@ -50,14 +50,14 @@
       "title": "Compose Effect Lab",
       "stack": "Compose · Effects · Lifecycle",
       "en": {
-        "question": "When should an effect restart, and who releases its resources?",
-        "body": "Effect keys, cleanup and callbacks that stay current without restarting work. Inspect LaunchedEffect, DisposableEffect and rememberUpdatedState.",
+        "question": "See when an effect restarts and releases its resources.",
+        "body": "Change effect keys and inspect cleanup, cancellation and callback updates. Examples use LaunchedEffect, DisposableEffect and rememberUpdatedState.",
         "evidence": "4 JVM tests · 9 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "¿Cuándo reinicia un efecto y quién libera sus recursos?",
-        "body": "Claves de efectos, limpieza y callbacks actualizados sin reiniciar trabajo. LaunchedEffect, DisposableEffect y rememberUpdatedState.",
-        "evidence": "4 tests JVM · 9 nativos locales · CI build/lint"
+        "question": "Comprueba cuándo se reinicia un efecto y cómo libera sus recursos.",
+        "body": "Cambia las claves de los efectos y observa la cancelación, la liberación de recursos y la actualización de callbacks. Los ejemplos usan LaunchedEffect, DisposableEffect y rememberUpdatedState.",
+        "evidence": "4 pruebas JVM · 9 Android locales · build/lint en CI"
       }
     },
     {
@@ -65,14 +65,14 @@
       "title": "Coroutines Tests Mini",
       "stack": "ViewModel · StateFlow · Virtual time",
       "en": {
-        "question": "Make cancellation and latest-query behavior observable.",
-        "body": "Injectable dispatchers, fakes and virtual time for ViewModel state, replacement of asynchronous work and failure recovery.",
+        "question": "Test what happens when a newer query replaces one in flight.",
+        "body": "Use injectable dispatchers, fakes and virtual time to test ViewModel state, request replacement and failure recovery.",
         "evidence": "9 JVM tests · 3 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "Hacer observables la cancelación y la última consulta.",
-        "body": "Dispatchers inyectables, fakes y tiempo virtual para estado de ViewModel, sustitución de trabajo asíncrono y recuperación.",
-        "evidence": "9 tests JVM · 3 nativos locales · CI build/lint"
+        "question": "Prueba qué ocurre cuando una consulta sustituye a otra en curso.",
+        "body": "Usa dispatchers sustituibles, fakes y tiempo virtual para probar el estado del ViewModel, la sustitución de peticiones y la recuperación tras un fallo.",
+        "evidence": "9 pruebas JVM · 3 Android locales · build/lint en CI"
       }
     },
     {
@@ -80,14 +80,14 @@
       "title": "Spec Evidence Lab",
       "stack": "Python · MCP · Spec-driven development",
       "en": {
-        "question": "Connect acceptance criteria to actual test evidence.",
-        "body": "Original CLI and optional MCP adapter. Trace JUnit to a versioned specification and reject stale proposals. Keep human review and evidence provenance explicit. EN/ES summaries preserve machine statuses and hashes.",
-        "evidence": "44 checker/configuration/presentation tests · 5 sample tests · 4 MCP cases"
+        "question": "Check test results against a versioned specification.",
+        "body": "A CLI with an optional MCP adapter. It links acceptance criteria to JUnit results and rejects proposals for an older specification. English/Spanish summaries keep JSON statuses and hashes unchanged. A reviewer still assesses what the tests establish.",
+        "evidence": "44 CLI tests · 5 sample tests · 4 MCP cases"
       },
       "es": {
-        "question": "Conectar aceptación y evidencia de pruebas real.",
-        "body": "CLI original y adaptador MCP opcional. Relaciona JUnit con una especificación versionada y rechaza propuestas obsoletas, conservando revisión humana y límites de procedencia. Resúmenes ES/EN sin cambiar estados o hashes.",
-        "evidence": "44 tests del checker/configuración/presentación · 5 del ejemplo · 4 casos MCP"
+        "question": "Contrasta los resultados de pruebas con una especificación versionada.",
+        "body": "CLI con adaptador MCP opcional. Relaciona criterios de aceptación con resultados JUnit y rechaza propuestas para una especificación anterior. Los resúmenes en español e inglés conservan los estados y hashes del JSON. Quien revisa sigue valorando qué demuestran las pruebas.",
+        "evidence": "44 pruebas de CLI · 5 del ejemplo · 4 casos MCP"
       }
     },
     {
@@ -95,14 +95,14 @@
       "title": "Vehicle Session Lab",
       "stack": "Kotlin/JVM · Callbacks · Automotive simulation",
       "en": {
-        "question": "A connection can fail independently of its owner.",
-        "body": "A fictional gateway demonstrates bounded reconnection, late callbacks, resource cleanup and per-metric freshness. Host-side simulation, without Android Car or vehicle hardware.",
-        "evidence": "23 JVM tests · executable demo · verified CI"
+        "question": "Reconnect without letting old callbacks change a new session.",
+        "body": "A simulated vehicle gateway with bounded retries, resource cleanup and timestamps for each telemetry value. It runs on the JVM; it does not connect to Android Car or vehicle hardware.",
+        "evidence": "23 JVM tests · executable demo · CI"
       },
       "es": {
-        "question": "Una conexión puede fallar sin cancelar a su propietario.",
-        "body": "Proveedor ficticio con reconexión acotada, callbacks tardíos, liberación de recursos y antigüedad por métrica. Simulación en el host, sin Android Car o hardware real.",
-        "evidence": "23 tests JVM · demo ejecutable · CI comprobada"
+        "question": "Reconecta sin que los callbacks antiguos alteren la sesión nueva.",
+        "body": "Simulación de una conexión con un vehículo: reintentos acotados, liberación de recursos y marcas de tiempo para cada dato de telemetría. Se ejecuta en la JVM, sin conexión con Android Car ni hardware de vehículo.",
+        "evidence": "23 pruebas JVM · demo ejecutable · CI"
       }
     },
     {
@@ -110,14 +110,14 @@
       "title": "GNSS Diagnostics Lab",
       "stack": "Python · C · ctypes · Synthetic captures",
       "en": {
-        "question": "A valid report is not proof of a precise receiver.",
-        "body": "Bounded CSV parsing, exact reference pairing, fix gaps and apparent jumps. An original Python/C boundary uses a spherical model and synthetic data, with no device acquisition.",
+        "question": "Find missing fixes and apparent position jumps.",
+        "body": "Read bounded CSV input, match samples with reference coordinates and report gaps or apparent jumps. A Python/C implementation uses a spherical distance model and synthetic data. It does not acquire positions from a device.",
         "evidence": "27 tests · native build · Linux/macOS CI"
       },
       "es": {
-        "question": "Un reporte válido no prueba la precisión de un receptor.",
-        "body": "CSV acotado, emparejado exacto, pérdida de fix, huecos y saltos aparentes. Frontera Python/C original, modelo esférico y datos sintéticos, sin adquisición del dispositivo.",
-        "evidence": "27 tests · build nativo · CI Linux/macOS"
+        "question": "Detecta muestras sin posición y saltos aparentes.",
+        "body": "Lee CSV con límites de tamaño, compara muestras con coordenadas de referencia y señala huecos o saltos aparentes. La implementación Python/C usa un modelo esférico de distancia y datos sintéticos. No obtiene posiciones de un dispositivo.",
+        "evidence": "27 pruebas · compilación C · CI Linux/macOS"
       }
     }
   ],
@@ -127,62 +127,62 @@
       "other_file": "es.html",
       "skip": "Skip to content",
       "nav_label": "Main",
-      "work": "Work",
+      "work": "Projects",
       "method": "Approach",
       "profile": "GitHub profile",
       "title_start": "Mobile engineering.",
-      "title_middle": "Built around ",
-      "title_accent": "behavior.",
-      "intro": "Android, Flutter and the engineering behind reliable mobile experiences.",
-      "cta": "Explore the work",
-      "description": "Mobile engineering by Manuel Naval. Original Android and Flutter examples, architecture, testing and AI-assisted development. Native iOS is the next extension.",
+      "title_middle": "Android and ",
+      "title_accent": "Flutter.",
+      "intro": "I’m Manuel Naval. I work on mobile apps, architecture, integration and testing.",
+      "cta": "View projects",
+      "description": "Manuel Naval, mobile engineer. Android and Flutter applications, concurrency labs, testing and AI-assisted development. Native iOS is planned.",
       "source": "Read the implementation",
       "ci": "CI history",
       "source_short": "Source",
       "rumbo_identity": "Rumbo / Native Android",
       "bitacora_identity": "Bitácora / Flutter",
-      "bitacora_subtitle": "Small board. Explicit state.",
+      "bitacora_subtitle": "The board updates after saving succeeds.",
       "capture_credit": "Actual API 37 emulator captures · English interface · fictional data.",
       "rumbo_credit": "Original Canvas landscapes by Manuel Naval.",
-      "board_caption": "Pending tasks",
-      "detail_caption": "Saved completion",
-      "lab_title": "Small labs. Specific questions.",
-      "lab_intro": "Focused experiments in concurrency, UI effects, AI-assisted engineering and integration. Each one isolates a question and makes its behavior inspectable.",
-      "lab_hint": "Open a project to read its scope and checks.",
-      "method_title": "A specification is a working agreement.",
-      "method_intro": "I use AI with reusable context, skills and MCP tools. Acceptance criteria, code review and test evidence keep the work inspectable.",
+      "board_caption": "Task list",
+      "detail_caption": "Completed task",
+      "lab_title": "Concurrency, UI effects and integration",
+      "lab_intro": "Run an experiment, follow its state changes and read the tests. These labs cover coroutine lifetimes, Compose effects, specifications and simulated integrations.",
+      "lab_hint": "Each repository includes setup instructions and the scope of its checks.",
+      "method_title": "How I work with AI",
+      "method_intro": "I describe the intended behavior in a specification before implementing it. AI helps with code changes; I review the result against the acceptance criteria and tests. Reusable instructions and MCP tools provide project context.",
       "method_link": "Explore Spec Evidence Lab",
       "steps": [
         [
-          "Define",
-          "Constraints, assumptions and open questions."
+          "Define the problem",
+          "User needs, constraints, assumptions and open questions."
         ],
         [
-          "Make it testable",
-          "Acceptance, failure, cancellation and recovery."
+          "Describe the behavior",
+          "States, acceptance criteria, cancellation, failure and recovery."
         ],
         [
           "Implement and review",
-          "Inspect code, compare alternatives and keep changes reviewable."
+          "Read the code, compare alternatives and check the result."
         ],
         [
-          "Keep the evidence",
-          "Tests, decisions and context for the next person or session."
+          "Record the results",
+          "Tests, decisions and enough context for someone else to continue."
         ]
       ],
-      "closing_title": "The code is the starting point.",
-      "closing_body": "Android and Flutter examples today. A gradual path to native iOS, with planned work kept separate from executed validation.",
-      "profile_detail": "Projects, source and validation",
+      "closing_title": "More code on GitHub",
+      "closing_body": "The current mobile examples use Android and Flutter. Native iOS is planned, starting with a Swift core and a SwiftUI task flow.",
+      "profile_detail": "Applications, labs and engineering notes",
       "roadmap": "Mobile roadmap",
-      "roadmap_detail": "What works now. What comes next.",
+      "roadmap_detail": "Planned Swift and SwiftUI work",
       "history": "Earlier Android, Flutter, Java and web exercises stay on GitHub with their scope, original notes and attribution.",
       "footer": "Mobile engineering",
       "credits": "Credits and licenses",
       "image_alts": {
-        "rumbo-explore.png": "Rumbo catalogue with a fictional mountain trip and local demo price.",
+        "rumbo-explore.png": "Rumbo trip catalogue with a mountain destination and a demo price.",
         "rumbo-offline.png": "Rumbo keeps the saved catalogue visible after a simulated offline failure.",
-        "bitacora-board.png": "Bitácora with one completed task and five pending field tasks.",
-        "bitacora-detail.png": "Bitácora detail with acknowledged completion and a Mark pending action."
+        "bitacora-board.png": "Bitácora task list with one completed task and five pending tasks.",
+        "bitacora-detail.png": "Bitácora task detail, marked complete, with a Mark pending button."
       }
     },
     "es": {
@@ -194,58 +194,58 @@
       "method": "Método",
       "profile": "Perfil GitHub",
       "title_start": "Ingeniería móvil.",
-      "title_middle": "Importa el ",
-      "title_accent": "comportamiento.",
-      "intro": "Android, Flutter y la ingeniería que sostiene una experiencia móvil fiable.",
-      "cta": "Explorar los proyectos",
-      "description": "Ingeniería móvil de Manuel Naval. Ejemplos originales Android y Flutter, arquitectura, pruebas e ingeniería asistida por IA. Ampliación gradual a iOS nativo.",
+      "title_middle": "Android y ",
+      "title_accent": "Flutter.",
+      "intro": "Soy Manuel Naval. Trabajo en apps móviles, arquitectura, integración y pruebas.",
+      "cta": "Ver proyectos",
+      "description": "Manuel Naval, ingeniero móvil. Aplicaciones Android y Flutter, laboratorios de concurrencia, pruebas y desarrollo asistido por IA. iOS nativo está planificado.",
       "source": "Leer la implementación",
       "ci": "Historial de CI",
       "source_short": "Código",
       "rumbo_identity": "Rumbo / Android nativo",
       "bitacora_identity": "Bitácora / Flutter",
-      "bitacora_subtitle": "Tablero pequeño. Estado explícito.",
+      "bitacora_subtitle": "El tablero se actualiza después de guardar.",
       "capture_credit": "Capturas reales del emulador API 37 · interfaz inglesa · datos ficticios.",
       "rumbo_credit": "Paisajes Canvas originales de Manuel Naval.",
-      "board_caption": "Tareas pendientes",
-      "detail_caption": "Guardado confirmado",
-      "lab_title": "Laboratorios pequeños. Preguntas concretas.",
-      "lab_intro": "Experimentos de concurrencia, efectos de UI, ingeniería asistida por IA e integración. Cada uno aísla una pregunta y permite inspeccionar su comportamiento.",
-      "lab_hint": "Abre un proyecto para leer su alcance y sus comprobaciones.",
-      "method_title": "Una especificación es un acuerdo de trabajo.",
-      "method_intro": "Utilizo IA con contexto reutilizable, skills y herramientas MCP. Los criterios de aceptación, la revisión de código y las pruebas permiten inspeccionar el trabajo.",
+      "board_caption": "Lista de tareas",
+      "detail_caption": "Tarea completada",
+      "lab_title": "Concurrencia, efectos de UI e integración",
+      "lab_intro": "Ejecuta un experimento, sigue sus cambios de estado y lee las pruebas. Estos laboratorios cubren el ciclo de vida de las coroutines, los efectos de Compose, las especificaciones y las integraciones simuladas.",
+      "lab_hint": "Cada repositorio incluye instrucciones de ejecución y el alcance de sus comprobaciones.",
+      "method_title": "Cómo trabajo con IA",
+      "method_intro": "Describo el comportamiento en una especificación antes de implementar. La IA me ayuda con el código; después lo reviso con los criterios de aceptación y las pruebas. Las instrucciones reutilizables y las herramientas MCP aportan el contexto del proyecto.",
       "method_link": "Explorar Spec Evidence Lab",
       "steps": [
         [
-          "Definir",
-          "Restricciones, supuestos y preguntas abiertas."
+          "Definir el problema",
+          "Necesidades del usuario, restricciones, supuestos y preguntas abiertas."
         ],
         [
-          "Hacerlo comprobable",
-          "Aceptación, fallos, cancelación y recuperación."
+          "Describir el comportamiento",
+          "Estados, criterios de aceptación, cancelación, fallos y recuperación."
         ],
         [
           "Implementar y revisar",
-          "Leer el código, comparar alternativas y preparar cambios revisables."
+          "Leer el código, comparar alternativas y comprobar el resultado."
         ],
         [
-          "Conservar la evidencia",
-          "Pruebas, decisiones y contexto para otra persona o sesión."
+          "Registrar los resultados",
+          "Pruebas, decisiones y contexto suficiente para que otra persona continúe."
         ]
       ],
-      "closing_title": "El código es el punto de partida.",
-      "closing_body": "Ejemplos Android y Flutter hoy. Una ampliación gradual a iOS nativo, distinguiendo lo planificado de la validación ejecutada.",
-      "profile_detail": "Proyectos, código y comprobaciones",
+      "closing_title": "Más código en GitHub",
+      "closing_body": "Los ejemplos móviles actuales usan Android y Flutter. iOS nativo está planificado: empezaré por un núcleo Swift y un flujo de tareas con SwiftUI.",
+      "profile_detail": "Aplicaciones, laboratorios y notas de ingeniería",
       "roadmap": "Hoja de ruta móvil",
-      "roadmap_detail": "Qué funciona ahora. Qué viene después.",
+      "roadmap_detail": "Trabajo previsto con Swift y SwiftUI",
       "history": "Los ejercicios anteriores de Android, Flutter, Java y web siguen en GitHub con su alcance, notas originales y atribución.",
       "footer": "Ingeniería móvil",
       "credits": "Créditos y licencias",
       "image_alts": {
-        "rumbo-explore.png": "Catálogo de Rumbo con una escapada de montaña ficticia y precio de demostración local.",
+        "rumbo-explore.png": "Catálogo de Rumbo con una escapada de montaña y un precio ficticio.",
         "rumbo-offline.png": "Rumbo conserva el catálogo guardado tras un fallo simulado sin conexión.",
-        "bitacora-board.png": "Bitácora con una tarea completada y cinco tareas de campo pendientes.",
-        "bitacora-detail.png": "Detalle de Bitácora con guardado confirmado y acción de marcar pendiente."
+        "bitacora-board.png": "Lista de Bitácora con una tarea completada y cinco pendientes.",
+        "bitacora-detail.png": "Detalle de una tarea completada en Bitácora, con el botón para marcarla pendiente."
       }
     }
   }
