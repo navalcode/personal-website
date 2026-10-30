@@ -22,12 +22,12 @@
       "en": {
         "question": "Complete a task and keep the change after a restart.",
         "body": "Six fictional field tasks. Completion appears after storage confirms the change. If reading saved tasks fails, editing stays disabled until a successful retry.",
-        "evidence": "23 controller/widget tests · Android persistence checks"
+        "evidence": "26 controller/widget tests · Android persistence checks"
       },
       "es": {
         "question": "Completa una tarea y conserva el cambio al reiniciar.",
         "body": "Seis tareas ficticias de campo. La tarea aparece completada después de confirmar el guardado. Si falla la lectura de los datos, la edición queda bloqueada hasta que se recuperan.",
-        "evidence": "23 pruebas de controlador y widgets · persistencia en Android"
+        "evidence": "26 pruebas de controlador y widgets · persistencia en Android"
       }
     },
     {

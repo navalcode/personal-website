@@ -4,6 +4,10 @@
     "sha256": "fd3b61e525ea9742fb3a9d4c6f05fca31e5e13249273027c3a6bdeae18ca64c6"
   },
   {
+    "path": "LICENSE",
+    "sha256": "8ee98a68db08740852b491de91922961bb928aaa13f9897c078a0e6eb3e1218a"
+  },
+  {
     "path": "README.md",
     "sha256": "5fd8ffb33bcc75d37426bc39f5af003a5d94a356e1e3f94380cd2817da523afc"
   },
@@ -16,15 +20,95 @@
     "sha256": "cb17860ecb7d7803180ceb6265dc56bd325e426885d76e72298c08b2ff6dc437"
   },
   {
+    "path": "THIRD_PARTY.md",
+    "sha256": "2cb923d8fb875f8f833bf75a503e1bb2df21a5a57f7a562519d578fed8016457"
+  },
+  {
+    "path": "third_party.json",
+    "sha256": "dcb597e44b7bb364e46922d7da0aaede91b265e48e63ecf6d6e43cac086f3557"
+  },
+  {
+    "path": "site.json",
+    "sha256": "e30e203372af72dba427a9a169cad3fc734213a44b5e2bc2cb70c7807102221a"
+  },
+  {
     "path": "content.json",
-    "sha256": "34406940de74032b8cd848283bdb0a22529bbbb942525bda28c2997d1d562b08"
+    "sha256": "4203143f508fe208e5d0eccd489dc87bd221399d83a1e284da0f2f07d6c9cb0b"
+  },
+  {
+    "path": "build.py",
+    "sha256": "846ca624a0ffa795cdd559f4a53c99d73b79b34dc3b0291f8c6b3d9de784f1d5"
+  },
+  {
+    "path": "check.py",
+    "sha256": "6319239444ce32665b20bea3857c5f92ec224b69a5b9854683fc060ffab1e439"
   },
   {
     "path": "docs/index.html",
-    "sha256": "77370a315d9cd3435b7c52f3001f428f1fe9fd0174a5becb1798d7f9ed7d67d5"
+    "sha256": "249deaab04a8fec5a86c6f0aee0497c014d507633b3f343dcba71d1bb44b1c3f"
   },
   {
     "path": "docs/es.html",
-    "sha256": "e992db7ca3cc1568036c0aedb0a49160e7d1d6873aa0488f65cae3b0a9723441"
+    "sha256": "da67823bbf650246dba2b60d3ebeca7b87956af5314bee01d7a32507b171c88b"
+  },
+  {
+    "path": "docs/styles.css",
+    "sha256": "224b7eb7bd4d81c3c7394fa6cc75e03fe81a32aa80a09d6aef81291e45ebde73"
+  },
+  {
+    "path": "docs/motion.js",
+    "sha256": "7645633297ec4af3a6773d60eabd1e6b5816142910263ac0914e0124dc89584e"
+  },
+  {
+    "path": "docs/.nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/assets/bitacora-board.png",
+    "sha256": "a94c81f8d2f058c9718dbbadceab04eaf68420926ab6ccdadc57ceb1e1e09d9a"
+  },
+  {
+    "path": "docs/assets/bitacora-detail.png",
+    "sha256": "967bdf3745e7846bca4cbe224e6b07662980faa835a103b28eb550601f34f645"
+  },
+  {
+    "path": "docs/assets/rumbo-explore.png",
+    "sha256": "8e4228a8e4b18daa5575bf2deb6880aecbc9d95b46b5a1a88abf85f92d6c0ba8"
+  },
+  {
+    "path": "docs/assets/rumbo-offline.png",
+    "sha256": "7ba931e3d12b11f3f3971019e74baf36a11fb32991cdd84c1d86832811bd2382"
+  },
+  {
+    "path": "docs/assets/favicon.svg",
+    "sha256": "eae10160a2d30ea68b815f58593f554c2eca15464b74ff8516531f8b3146e5f5"
+  },
+  {
+    "path": "docs/assets/fonts/Outfit.woff2",
+    "sha256": "ed629d88c2db8ace1b3ac85fbf1fe0223d7272defaa817d1955100101966f0fb"
+  },
+  {
+    "path": "docs/assets/fonts/Fraunces.woff2",
+    "sha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8"
+  },
+  {
+    "path": "docs/assets/fonts/Outfit-OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+  },
+  {
+    "path": "docs/assets/fonts/Fraunces-OFL.txt",
+    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+  },
+  {
+    "path": "docs/assets/vendor/gsap.min.js",
+    "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+  },
+  {
+    "path": "docs/assets/vendor/ScrollTrigger.min.js",
+    "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+  },
+  {
+    "path": "docs/assets/vendor/GSAP-LICENSE.txt",
+    "sha256": "e84ef81eec4410a3c552718fc35233f835d0899002d97f9a6302666741acde92"
   }
 ]
