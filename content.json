@@ -7,12 +7,12 @@
       "en": {
         "question": "Browse saved trips when a refresh fails.",
         "body": "A fictional trip catalogue built with Compose and Retrofit. Responses are simulated locally; Room keeps the last saved catalogue available when a refresh fails.",
-        "evidence": "32 JVM checks · 8 emulator checks"
+        "evidence": "35 JVM checks · 9 emulator checks"
       },
       "es": {
         "question": "Consulta las escapadas guardadas aunque falle la actualización.",
         "body": "Catálogo ficticio de escapadas con Compose y Retrofit. Las respuestas se simulan en la app; Room conserva el último catálogo guardado si falla la actualización.",
-        "evidence": "32 pruebas JVM · 8 en emulador"
+        "evidence": "35 pruebas JVM · 9 en emulador"
       }
     },
     {
