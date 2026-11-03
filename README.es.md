@@ -2,7 +2,7 @@
 
 [English](README.md) · [Web española](https://navalcode.github.io/personal-website/es.html) · [GitHub](https://github.com/navalcode)
 
-Fuentes de la web personal de Manuel Naval. GitHub es el lugar principal para leer el trabajo; la web ofrece una entrada visual a ocho aplicaciones y laboratorios técnicos y enlaza código e historial de CI. El inglés es el idioma principal y la versión española ofrece el mismo contenido.
+Fuentes de la web personal de Manuel Naval. GitHub es el lugar principal para leer el trabajo; la web ofrece una entrada visual a nueve aplicaciones y laboratorios técnicos y enlaza código e historial de CI. El inglés es el idioma principal y la versión española ofrece el mismo contenido.
 
 ## Desarrollo
 
@@ -14,15 +14,15 @@ python3 check.py
 python3 -m http.server 8048 --directory docs --bind 127.0.0.1
 ```
 
-Modifica el contenido, el generador de HTML, el CSS o el `docs/motion.js` opcional; después regenera y recarga. `check.py` comprueba claves de traducción, ocho rutas de proyectos/evidencia, recursos locales, contraste calculado y hashes de terceros. No sustituye la revisión en navegador.
+Modifica el contenido, el generador de HTML, el CSS o el `docs/motion.js` opcional; después regenera y recarga. `check.py` comprueba claves de traducción, nueve rutas de proyectos/evidencia, recursos locales, contraste calculado y hashes de terceros. No sustituye la revisión en navegador.
 
 ## Diseño y comportamiento
 
-[DESIGN.md](DESIGN.md) explica el sistema visual y sus seis disposiciones: introducción con capturas, galería de Rumbo, caso de Bitácora, índice de laboratorios plegable, secuencia de trabajo y enlaces a otros proyectos. Las capturas proceden de las demos Android ejecutadas en API 37, en inglés y con datos ficticios. Los paisajes de Rumbo son ilustraciones Canvas originales; ningún concepto generado se presenta como una app ejecutada.
+[DESIGN.md](DESIGN.md) explica el sistema visual y sus seis disposiciones: introducción con capturas, galería de Rumbo, caso de Bitácora, índice de laboratorios plegable, secuencia de trabajo y enlaces a otros proyectos. Las capturas proceden de las demos Android ejecutadas en API 37 y de iOS Simulator 27.2, en inglés y con datos ficticios. Los paisajes de Rumbo son ilustraciones Canvas originales; ningún concepto generado se presenta como una app ejecutada.
 
 HTML resuelve la navegación, los enlaces, las regiones de contenido y los controles nativos `details/summary`. GSAP ajusta la escala y la opacidad de las imágenes y fija la introducción del índice en ventanas de escritorio con espacio suficiente. `prefers-reduced-motion` desactiva esos efectos y el movimiento CSS. El contenido y las secciones expandibles siguen funcionando sin JavaScript. Las fuentes y GSAP conservan avisos/licencias propios, separados del código original MIT.
 
-Comprobaciones locales citadas por el rediseño: Rumbo: 35 JVM/9 de emulador y Bitácora: 37 de controlador/widgets más persistencia nativa. Cada repositorio documenta sus límites. Los enlaces a CI llevan a las ejecuciones actuales de cada proyecto. iOS nativo sigue siendo una ampliación gradual planificada.
+Comprobaciones locales citadas por el rediseño: Rumbo: 35 JVM/9 de emulador y Bitácora: 37 de controlador/widgets más persistencia nativa. Cada repositorio documenta sus límites. Los enlaces a CI llevan a las ejecuciones actuales de cada proyecto. Bitácora SwiftUI añade una demostración iOS nativa con 43 pruebas macOS, dos casos XCTest nativos y evidencia de Simulator. VoiceOver, protección física y tiendas mantienen sus comprobaciones separadas.
 
 ## Alojamiento
 

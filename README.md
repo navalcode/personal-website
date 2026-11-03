@@ -2,7 +2,7 @@
 
 [Español](README.es.md) · [Website](https://navalcode.github.io/personal-website/) · [GitHub](https://github.com/navalcode)
 
-Source for Manuel Naval's personal website. GitHub is the main place to read the work; the site provides a visual introduction to eight apps and technical labs and links to their code and CI history. English is primary, with a substantive Spanish version.
+Source for Manuel Naval's personal website. GitHub is the main place to read the work; the site provides a visual introduction to nine apps and technical labs and links to their code and CI history. English is primary, with a substantive Spanish version.
 
 ## Develop
 
@@ -14,15 +14,15 @@ python3 check.py
 python3 -m http.server 8048 --directory docs --bind 127.0.0.1
 ```
 
-Edit content, renderer, CSS or the optional `docs/motion.js`, then regenerate and reload. `check.py` validates translation keys, eight project/evidence routes, local files, calculated contrast and pinned asset hashes. Those source checks do not replace browser review.
+Edit content, renderer, CSS or the optional `docs/motion.js`, then regenerate and reload. `check.py` validates translation keys, nine project/evidence routes, local files, calculated contrast and pinned asset hashes. Those source checks do not replace browser review.
 
 ## Design and behavior
 
-[DESIGN.md](DESIGN.md) explains the shared visual system and six layouts: an introduction with app captures, a Rumbo gallery, a Bitácora case study, an expandable lab index, a four-step work sequence and links to further projects. Captures come from the actual API 37 Android demos in English, with fictional data. Rumbo's landscapes are original Canvas artwork; no generated design concept is presented as a running app.
+[DESIGN.md](DESIGN.md) explains the shared visual system and six layouts: an introduction with app captures, a Rumbo gallery, a Bitácora case study, an expandable lab index, a four-step work sequence and links to further projects. Captures come from the actual API 37 Android demos and iOS 27.2 Simulator, in English with fictional data. Rumbo's landscapes are original Canvas artwork; no generated design concept is presented as a running app.
 
 HTML owns navigation, links, landmarks and native `details/summary` disclosures. GSAP only scales/fades media and pins the lab context on sufficiently wide/tall desktop windows. `prefers-reduced-motion` disables those effects and CSS movement. Content and disclosures remain usable without JavaScript. Fonts and vendor notices are preserved separately from the original MIT source.
 
-Local app checks cited by the redesign: Rumbo: 35 JVM/9 emulator checks and Bitácora: 37 controller/widget checks plus native persistence. Each repository documents validation limits. Follow each project’s CI link for its current runs. Native iOS remains a gradual roadmap, not an implemented capability.
+Local app checks cited by the redesign: Rumbo: 35 JVM/9 emulator checks and Bitácora: 37 controller/widget checks plus native persistence. Each repository documents validation limits. Follow each project’s CI link for its current runs. Bitácora SwiftUI adds a native iOS demonstration with 43 macOS tests, two native XCTest cases and Simulator evidence. VoiceOver, physical-device protection and stores remain separate checks.
 
 ## Hosting
 

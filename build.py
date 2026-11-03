@@ -1,6 +1,7 @@
 """Generate complete EN/ES HTML; all content remains usable without JavaScript."""
 from html import escape
 import json
+import struct
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -25,7 +26,8 @@ def render(language):
 
     def image(name, caption=None, eager=False):
         loading = 'eager' if eager else 'lazy'
-        picture = f'<img src="assets/{name}" width="1080" height="2400" alt="{e(c["image_alts"][name])}" loading="{loading}" decoding="async">'
+        width, height = struct.unpack('>II', (ROOT / 'docs/assets' / name).read_bytes()[16:24])
+        picture = f'<img src="assets/{name}" width="{width}" height="{height}" alt="{e(c["image_alts"][name])}" loading="{loading}" decoding="async">'
         link = f'<a class="screen-link" href="assets/{name}">{picture}</a>'
         if caption:
             return f'<figure class="screen-figure">{link}<figcaption>{e(caption)}</figcaption></figure>'
@@ -43,7 +45,9 @@ def render(language):
 <details{opened}><summary><span class="summary-copy"><strong id="title-{project['id']}">{e(project['title'])}</strong><span>{e(p['question'])}</span></span><span class="summary-icon" aria-hidden="true"></span></summary>
 <div class="lab-body"><p class="stack">{e(project['stack'])}</p><p>{e(p['body'])}</p><p class="evidence">{e(p['evidence'])}</p>{project_links(project)}</div></details></article>'''
 
-    rumbo, bitacora = PROJECTS[:2]
+    by_id = {project['id']: project for project in PROJECTS}
+    rumbo, bitacora, ios = (by_id[key] for key in ('rumbo-android', 'bitacora-flutter', 'bitacora-ios'))
+    labs = [project for project in PROJECTS if project['id'] not in {'rumbo-android', 'bitacora-flutter', 'bitacora-ios'}]
     steps = ''.join(f'<li><h3>{e(heading)}</h3><p>{e(body)}</p></li>' for heading, body in c['steps'])
     return f'''<!doctype html>
 <html lang="{language}">
@@ -75,9 +79,13 @@ def render(language):
 <article id="bitacora-flutter" class="bitacora-case chapter" aria-labelledby="bitacora-title" data-layout="open-three-column">
 <div class="bitacora-copy"><p class="project-identity">{e(c['bitacora_identity'])}</p><h2 id="bitacora-title">{e(bitacora[language]['question'])}</h2><div class="state-story"><h3>{e(c['bitacora_subtitle'])}</h3><p>{e(bitacora[language]['body'])}</p></div><p class="evidence">{e(bitacora[language]['evidence'])}</p>{project_links(bitacora, True)}</div>
 <div class="board-image motion-media">{image('bitacora-board.png',c['board_caption'])}</div><div class="detail-image motion-media">{image('bitacora-detail.png',c['detail_caption'])}</div><p class="capture-credit">{e(c['capture_credit'])}</p>
+</article>
+<article id="bitacora-ios" class="bitacora-case chapter" aria-labelledby="ios-title" data-layout="open-three-column">
+<div class="bitacora-copy"><p class="project-identity">{e(c['ios_identity'])}</p><h2 id="ios-title">{e(ios[language]['question'])}</h2><div class="state-story"><h3>{e(c['ios_subtitle'])}</h3><p>{e(ios[language]['body'])}</p></div><p class="evidence">{e(ios[language]['evidence'])}</p><p class="reading-note">{e(c['ios_scope'])}</p>{project_links(ios, True)}</div>
+<div class="board-image motion-media">{image('bitacora-ios-board.png',c['board_caption'])}</div><div class="detail-image motion-media">{image('bitacora-ios-detail.png',c['ios_detail_caption'])}</div><p class="capture-credit">{e(c['ios_credit'])}</p>
 </article></section>
 <section class="lab-index chapter" id="labs" aria-labelledby="labs-title" data-layout="expandable-index">
-<div class="lab-intro"><h2 id="labs-title">{e(c['lab_title'])}</h2><p>{e(c['lab_intro'])}</p><p class="reading-note">{e(c['lab_hint'])}</p></div><div class="lab-list">{''.join(lab(project) for project in PROJECTS[2:])}</div>
+<div class="lab-intro"><h2 id="labs-title">{e(c['lab_title'])}</h2><p>{e(c['lab_intro'])}</p><p class="reading-note">{e(c['lab_hint'])}</p></div><div class="lab-list">{''.join(lab(project) for project in labs)}</div>
 </section>
 <section class="approach chapter" id="approach" aria-labelledby="approach-title" data-layout="open-sequence">
 <div class="approach-head"><h2 id="approach-title">{e(c['method_title'])}</h2><p>{e(c['method_intro'])}</p></div><ol class="method-sequence">{steps}</ol><a class="method-link" href="https://github.com/navalcode/spec-evidence-lab">{e(c['method_link'])} {arrow()}</a>

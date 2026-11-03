@@ -31,6 +31,21 @@
       }
     },
     {
+      "id": "bitacora-ios",
+      "title": "Bitácora · SwiftUI",
+      "stack": "Swift · SwiftUI · Actors · XCTest",
+      "en": {
+        "question": "Recover confirmed work after a restart.",
+        "body": "A Swift actor coordinates requests and confirmed state. A versioned local document keeps completed tasks across process restarts; uncertain writes block editing until a successful reread.",
+        "evidence": "43 macOS tests · 2 native XCTest cases · Simulator evidence"
+      },
+      "es": {
+        "question": "Recupera el trabajo confirmado al reiniciar.",
+        "body": "Un actor Swift coordina peticiones y estado confirmado. Un documento local versionado conserva las completadas al reiniciar el proceso; un guardado sin confirmar bloquea la edición hasta releer correctamente.",
+        "evidence": "43 pruebas macOS · 2 casos XCTest nativos · evidencia de Simulator"
+      }
+    },
+    {
       "id": "coroutine-lab",
       "title": "Coroutine Lab",
       "stack": "Kotlin · Coroutines · Flow",
@@ -131,11 +146,11 @@
       "method": "Approach",
       "profile": "GitHub profile",
       "title_start": "Mobile engineering.",
-      "title_middle": "Android and ",
-      "title_accent": "Flutter.",
-      "intro": "I’m Manuel Naval. I work on mobile apps, architecture, integration and testing.",
+      "title_middle": "Android, Flutter and ",
+      "title_accent": "SwiftUI.",
+      "intro": "I’m Manuel Naval. I develop and maintain Android and Flutter apps, and explore native iOS through an original SwiftUI demo.",
       "cta": "View projects",
-      "description": "Manuel Naval, mobile engineer. Android and Flutter applications, concurrency labs, testing and AI-assisted development. Native iOS is planned.",
+      "description": "Manuel Naval, mobile engineer. Android, Flutter and an original native SwiftUI demo; architecture, concurrency, testing and AI-assisted engineering.",
       "source": "Read the implementation",
       "ci": "CI history",
       "source_short": "Source",
@@ -171,10 +186,10 @@
         ]
       ],
       "closing_title": "More code on GitHub",
-      "closing_body": "The current mobile examples use Android and Flutter. Native iOS is planned, starting with a Swift core and a SwiftUI task flow.",
+      "closing_body": "The collection includes Android and Flutter apps plus a native SwiftUI demonstration. Each repository records how it was tested and what remains outside its scope.",
       "profile_detail": "Applications, labs and engineering notes",
       "roadmap": "Mobile roadmap",
-      "roadmap_detail": "Planned Swift and SwiftUI work",
+      "roadmap_detail": "Native iOS evidence and next platform checks",
       "history": "Earlier Android, Flutter, Java and web exercises stay on GitHub with their scope, original notes and attribution.",
       "footer": "Mobile engineering",
       "credits": "Credits and licenses",
@@ -182,8 +197,15 @@
         "rumbo-explore.png": "Rumbo trip catalogue with a mountain destination and a demo price.",
         "rumbo-offline.png": "Rumbo keeps the saved catalogue visible after a simulated offline failure.",
         "bitacora-board.png": "Bitácora task list with one completed task and five pending tasks.",
-        "bitacora-detail.png": "Bitácora task detail, marked complete, with a Mark pending button."
-      }
+        "bitacora-detail.png": "Bitácora task detail, marked complete, with a Mark pending button.",
+        "bitacora-ios-board.png": "Bitácora SwiftUI in iOS Simulator, with two confirmed tasks restored after relaunch.",
+        "bitacora-ios-detail.png": "Bitácora SwiftUI task detail with an action to mark it completed."
+      },
+      "ios_identity": "Bitácora / Native iOS demonstration",
+      "ios_subtitle": "A separate native implementation in SwiftUI.",
+      "ios_scope": "Simulator validation; VoiceOver, physical devices and store distribution have separate checks.",
+      "ios_credit": "Actual iOS 27.2 Simulator captures · English interface · fictional data.",
+      "ios_detail_caption": "Task detail"
     },
     "es": {
       "other": "English",
@@ -194,11 +216,11 @@
       "method": "Método",
       "profile": "Perfil GitHub",
       "title_start": "Ingeniería móvil.",
-      "title_middle": "Android y ",
-      "title_accent": "Flutter.",
-      "intro": "Soy Manuel Naval. Trabajo en apps móviles, arquitectura, integración y pruebas.",
+      "title_middle": "Android, Flutter y ",
+      "title_accent": "SwiftUI.",
+      "intro": "Soy Manuel Naval. Desarrollo y mantengo apps Android y Flutter; amplío iOS nativo con una demostración original SwiftUI.",
       "cta": "Ver proyectos",
-      "description": "Manuel Naval, ingeniero móvil. Aplicaciones Android y Flutter, laboratorios de concurrencia, pruebas y desarrollo asistido por IA. iOS nativo está planificado.",
+      "description": "Manuel Naval, ingeniero móvil. Android, Flutter y una demostración nativa SwiftUI; arquitectura, concurrencia, pruebas e ingeniería asistida por IA.",
       "source": "Leer la implementación",
       "ci": "Historial de CI",
       "source_short": "Código",
@@ -234,10 +256,10 @@
         ]
       ],
       "closing_title": "Más código en GitHub",
-      "closing_body": "Los ejemplos móviles actuales usan Android y Flutter. iOS nativo está planificado: empezaré por un núcleo Swift y un flujo de tareas con SwiftUI.",
+      "closing_body": "La colección incluye apps Android y Flutter y una demostración SwiftUI nativa. Cada repositorio registra cómo se ha probado y qué queda fuera de su alcance.",
       "profile_detail": "Aplicaciones, laboratorios y notas de ingeniería",
       "roadmap": "Hoja de ruta móvil",
-      "roadmap_detail": "Trabajo previsto con Swift y SwiftUI",
+      "roadmap_detail": "Evidencia iOS nativa y siguientes comprobaciones de plataforma",
       "history": "Los ejercicios anteriores de Android, Flutter, Java y web siguen en GitHub con su alcance, notas originales y atribución.",
       "footer": "Ingeniería móvil",
       "credits": "Créditos y licencias",
@@ -245,8 +267,15 @@
         "rumbo-explore.png": "Catálogo de Rumbo con una escapada de montaña y un precio ficticio.",
         "rumbo-offline.png": "Rumbo conserva el catálogo guardado tras un fallo simulado sin conexión.",
         "bitacora-board.png": "Lista de Bitácora con una tarea completada y cinco pendientes.",
-        "bitacora-detail.png": "Detalle de una tarea completada en Bitácora, con el botón para marcarla pendiente."
-      }
+        "bitacora-detail.png": "Detalle de una tarea completada en Bitácora, con el botón para marcarla pendiente.",
+        "bitacora-ios-board.png": "Bitácora SwiftUI en iOS Simulator, con dos tareas confirmadas tras volver a abrir.",
+        "bitacora-ios-detail.png": "Detalle de tarea de Bitácora SwiftUI con acción para marcar completada."
+      },
+      "ios_identity": "Bitácora / iOS nativo · demostración",
+      "ios_subtitle": "Una implementación nativa independiente con SwiftUI.",
+      "ios_scope": "Validación en Simulator; VoiceOver, dispositivo físico y tiendas mantienen sus propias comprobaciones.",
+      "ios_credit": "Capturas reales de iOS Simulator 27.2 · interfaz inglesa · datos ficticios.",
+      "ios_detail_caption": "Detalle de tarea"
     }
   }
 }

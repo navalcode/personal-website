@@ -9,15 +9,15 @@
   },
   {
     "path": "README.md",
-    "sha256": "a94bef4f1a5016c915f1eaa0049e5828e718a72804ccd39a703387e431d79294"
+    "sha256": "e60b668de707b9693b2149b18444b8700f71b02147d1cf3f248315cf568b65ca"
   },
   {
     "path": "README.es.md",
-    "sha256": "1f8bd18ef98826db16b0680077505380ccbb087f94bb59aa0ad221b8c7f3f830"
+    "sha256": "578b77e04d7f57b14b3ff7f3733a84ebed13cf0794870bb663126c7f9e533525"
   },
   {
     "path": "DESIGN.md",
-    "sha256": "cb17860ecb7d7803180ceb6265dc56bd325e426885d76e72298c08b2ff6dc437"
+    "sha256": "88af019b5133f47bcd871b0251053d63531e4dd38568cc76d4a8a18a8c28a42c"
   },
   {
     "path": "THIRD_PARTY.md",
@@ -33,23 +33,23 @@
   },
   {
     "path": "content.json",
-    "sha256": "571281d54e7f2b5edff8cf7c3267a48775f2f79ed7733e3bb70fa5182734a3cf"
+    "sha256": "a546e5d2c55de2b49395b5eb5c473bc156bb8e06eccbbba01e2dbedffeb73005"
   },
   {
     "path": "build.py",
-    "sha256": "846ca624a0ffa795cdd559f4a53c99d73b79b34dc3b0291f8c6b3d9de784f1d5"
+    "sha256": "1332a528f181c622929a98ecd3457b8ec7b17622be5e9d3ea5e98cc3bb00f09d"
   },
   {
     "path": "check.py",
-    "sha256": "6319239444ce32665b20bea3857c5f92ec224b69a5b9854683fc060ffab1e439"
+    "sha256": "be3f547fbe4fae784edabb9bc61279f8e2ce9be688a353b2f43df622a9d8f10a"
   },
   {
     "path": "docs/index.html",
-    "sha256": "56a8fb6a65b057ff90e6a82e1df1b586f4138546801e3aa8c7c9d18d5192893a"
+    "sha256": "2685387cbe3d7131e754c75563ea8e358768bc7b33a2b17e0d9502800790806a"
   },
   {
     "path": "docs/es.html",
-    "sha256": "fa727fd90a0627fb5b9d770ad0a922f3c4c221c102e2dcbef277ba9b3c577558"
+    "sha256": "85916d652733f667f02359c84c39ed8157a3119379b7609e5683a7b3ee2e03e4"
   },
   {
     "path": "docs/styles.css",
@@ -70,6 +70,14 @@
   {
     "path": "docs/assets/bitacora-detail.png",
     "sha256": "967bdf3745e7846bca4cbe224e6b07662980faa835a103b28eb550601f34f645"
+  },
+  {
+    "path": "docs/assets/bitacora-ios-board.png",
+    "sha256": "eb50dea5c502fefa6fcd94277ad5ed9efe5a5580c882d9092a39735c6417ff1f"
+  },
+  {
+    "path": "docs/assets/bitacora-ios-detail.png",
+    "sha256": "621526f89b799cb773d4c7bc4421f9e27599ddef8d224d4d4521a87d28f71b91"
   },
   {
     "path": "docs/assets/rumbo-explore.png",

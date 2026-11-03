@@ -49,7 +49,7 @@ def luminance(color):
 
 def check():
     assert set(build.COPY['en']) == set(build.COPY['es']), 'copy keys differ between languages'
-    assert len(build.PROJECTS) == 8 and len({p['id'] for p in build.PROJECTS}) == 8
+    assert len(build.PROJECTS) == 9 and len({p['id'] for p in build.PROJECTS}) == 9
     for p in build.PROJECTS:
         assert set(p['en']) == set(p['es']) == {'question', 'body', 'evidence'}
         assert all(p[lang][key].strip() for lang in ['en', 'es'] for key in p[lang])
@@ -61,7 +61,7 @@ def check():
         assert text == build.render(language), 'generated page is stale'
         assert not any(term in text.lower() for term in ['lorem ipsum', '[insert', 'section 01', 'question 05'])
         page = Page(); page.feed(text)
-        assert page.language == language and page.h1 == 1 and page.articles == 8
+        assert page.language == language and page.h1 == 1 and page.articles == 9
         assert page.disclosures == 6 and len(page.layouts) >= 4 and set(page.scripts) == SCRIPTS
         for resource in page.resources:
             parsed = urlsplit(resource)
