@@ -9,11 +9,11 @@
   },
   {
     "path": "README.md",
-    "sha256": "2535022475abff6da15f0f7ba40cd92cd8b79882b6f110a11f76bfb3e98702ca"
+    "sha256": "bdf703174a4922ec3541a37cfe238d3c5420de2341277fb34458acdaaa6a33ed"
   },
   {
     "path": "README.es.md",
-    "sha256": "e9f5ca59a9e93819be7270b1d40039a0925a8517b9d493f0e61ae20e741ed5c1"
+    "sha256": "e1bb78c1b8269161bdbbdc0d0b6e32df439d49ece864722f54eadd6c6a678eae"
   },
   {
     "path": "DESIGN.md",
@@ -33,7 +33,7 @@
   },
   {
     "path": "content.json",
-    "sha256": "d8ea1af1f08adcda0ecc13cf9422962820d779db1c027bef4951147b52cde69d"
+    "sha256": "7270ca38850ca99d39aa73c4880dd2fdd8169093ebf01558a7e0d214c5768b70"
   },
   {
     "path": "build.py",
@@ -45,11 +45,11 @@
   },
   {
     "path": "docs/index.html",
-    "sha256": "ea4a8bb65235ea2c11d2eda06dc25023f0db4cbde6c0afedfed063a4e9e6cc09"
+    "sha256": "f973bddbb85a573b9345bcd97bb1f6ec032bd0738b99a8e81c941b2284729958"
   },
   {
     "path": "docs/es.html",
-    "sha256": "727f8848d8a7ebac7c967c4ef5d4c1b141dc90ffb31ca4e232b68f7c2d23198c"
+    "sha256": "0d6d28e70ccf90389e308788293831f96909a617fd3035b6e285ba6b645ed32f"
   },
   {
     "path": "docs/styles.css",
