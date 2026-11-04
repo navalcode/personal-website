@@ -23,3 +23,7 @@ HTML owns navigation, landmarks and native details/summary. The shipped page loa
 The previous Outfit/Fraunces and GSAP/ScrollTrigger assets are retained with their original notices but are not loaded. They do not define the current design. Impeccable (https://github.com/pbakaus/impeccable) informed the craft review; its engine, hooks and detector are not installed and no engine certification is claimed.
 
 Check EN/ES equivalence, three technical capabilities, professional/demo boundaries, permitted names only in experience, developer identity, nine code/CI routes, local assets/hashes, calculated contrast, 360/768/1366px geometry, keyboard disclosures and actual image loading. Save real final captures; discarded concepts and incomplete lazy-load captures are not final evidence.
+
+## Editorial tone
+
+Project summaries lead with technical purpose: architecture, state, concurrency, integration, persistence or verification. Use descriptive statements instead of instructions for a demo user. Keep language precise and readable; avoid promotional adjectives, inflated guarantees and jargon added for status. Actions retain clear verbs. Preserve fictional/simulated scope, authorship and validation limits. File formats such as GNSS input CSV belong in repository documentation rather than the project lead. English and Spanish carry equivalent substance.

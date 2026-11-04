@@ -17,7 +17,7 @@
   },
   {
     "path": "DESIGN.md",
-    "sha256": "f9f7cefc9f41ea7ff8bb240358383b21800fbc0db18cc67b0f744dbd6142b1c5"
+    "sha256": "b1fef2444de2aa1df4043a4442886a6c92e881aeb1fd86f2b57bfcb32a041b4d"
   },
   {
     "path": "PRODUCT.md",
@@ -37,7 +37,7 @@
   },
   {
     "path": "content.json",
-    "sha256": "5b777ae4c770435b16c2fa73630b35ada07a96ba67e0795a1c7ed467c4de84d8"
+    "sha256": "196498d40d156b5a808ed3551650fff7b30b90fe566a7b85c13ad05abd8e23db"
   },
   {
     "path": "build.py",
@@ -49,11 +49,11 @@
   },
   {
     "path": "docs/index.html",
-    "sha256": "572590e5abda4a8b356908fd505d60f69b93ee9a52966c6904609cfff3a1c6ef"
+    "sha256": "a3c7d633aa8463ca91d1ca5bfa21b5f73beeeace2d240ed3a1313f509fe4d47d"
   },
   {
     "path": "docs/es.html",
-    "sha256": "d188091700cde2cf424936e3832d116fd3b0142b8605808f37566dbbba16f210"
+    "sha256": "4c923fea928de0be9965783f66e876caac184cd8599993a568b1e8cae22173e3"
   },
   {
     "path": "docs/styles.css",

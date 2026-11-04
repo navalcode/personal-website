@@ -5,13 +5,13 @@
       "title": "Rumbo",
       "stack": "Kotlin · Compose · Room · Retrofit",
       "en": {
-        "question": "Browse saved trips when a refresh fails.",
-        "body": "A fictional trip catalogue built with Compose and Retrofit. Responses are simulated locally; Room keeps the last saved catalogue available when a refresh fails.",
+        "question": "Local persistence and error recovery on Android.",
+        "body": "A catalogue application with fictional data, a Compose UI, simulated REST integration through Retrofit and Room persistence. The saved catalogue remains available when a refresh fails.",
         "evidence": "35 JVM checks · 9 emulator checks"
       },
       "es": {
-        "question": "Consulta las escapadas guardadas aunque falle la actualización.",
-        "body": "Catálogo ficticio de escapadas con Compose y Retrofit. Las respuestas se simulan en la app; Room conserva el último catálogo guardado si falla la actualización.",
+        "question": "Persistencia local y recuperación de errores en Android.",
+        "body": "Aplicación de catálogo con datos ficticios, interfaz Compose, integración REST simulada con Retrofit y persistencia en Room. El catálogo guardado permanece disponible ante fallos de actualización.",
         "evidence": "35 pruebas JVM · 9 en emulador"
       }
     },
@@ -20,13 +20,13 @@
       "title": "Bitácora",
       "stack": "Flutter · Dart · Local persistence · ES/EN",
       "en": {
-        "question": "Complete a task and keep the change after a restart.",
-        "body": "Six fictional field tasks. Completion appears after storage confirms the change. If reading saved tasks fails, editing stays disabled until a successful retry.",
+        "question": "Consistent state and confirmed persistence in Flutter.",
+        "body": "A task application with asynchronous coordination and local storage. State changes follow confirmed writes; read failures prevent editing until the data can be recovered.",
         "evidence": "37 controller/widget tests · Android persistence checks"
       },
       "es": {
-        "question": "Completa una tarea y conserva el cambio al reiniciar.",
-        "body": "Seis tareas ficticias de campo. La tarea aparece completada después de confirmar el guardado. Si falla la lectura de los datos, la edición queda bloqueada hasta que se recuperan.",
+        "question": "Estado consistente y persistencia confirmada en Flutter.",
+        "body": "Aplicación de tareas con coordinación asíncrona y almacenamiento local. El estado se actualiza tras confirmar cada escritura; los fallos de lectura bloquean la edición hasta recuperar los datos.",
         "evidence": "37 pruebas de controlador y widgets · persistencia en Android"
       }
     },
@@ -35,13 +35,13 @@
       "title": "Bitácora · SwiftUI",
       "stack": "Swift · SwiftUI · Actors · XCTest",
       "en": {
-        "question": "Recover confirmed work after a restart.",
-        "body": "A Swift actor coordinates requests and confirmed state. A versioned local document keeps completed tasks across process restarts; uncertain writes block editing until a successful reread.",
+        "question": "Concurrency and recoverable persistence with SwiftUI.",
+        "body": "A Swift actor coordinates requests and confirmed state. Versioned local persistence retains completed tasks across processes; uncertain writes prevent further edits until a successful reread.",
         "evidence": "43 macOS tests · 2 native XCTest cases · Simulator evidence"
       },
       "es": {
-        "question": "Recupera el trabajo confirmado al reiniciar.",
-        "body": "Un actor Swift coordina peticiones y estado confirmado. Un documento local versionado conserva las completadas al reiniciar el proceso; un guardado sin confirmar bloquea la edición hasta releer correctamente.",
+        "question": "Concurrencia y persistencia recuperable con SwiftUI.",
+        "body": "Un actor Swift coordina peticiones y estado confirmado. La persistencia local versionada conserva las tareas completadas entre procesos; las escrituras sin confirmar bloquean nuevas ediciones hasta completar una relectura.",
         "evidence": "43 pruebas macOS · 2 casos XCTest nativos · evidencia de Simulator"
       }
     },
@@ -50,13 +50,13 @@
       "title": "Coroutine Lab",
       "stack": "Kotlin · Coroutines · Flow",
       "en": {
-        "question": "Follow coroutine lifetimes, cancellation and errors.",
-        "body": "Run examples of launch/async, exception propagation and Flow operators. Predict the sequence of events, then compare it with the trace and tests.",
+        "question": "Structured concurrency, cancellation and error propagation.",
+        "body": "An Android lab covering launch/async, exception propagation and Flow operators. Traces and tests document cancellation behavior and error handling.",
         "evidence": "10 JVM tests · 4 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "Sigue el ciclo de vida, la cancelación y los errores de las coroutines.",
-        "body": "Ejecuta ejemplos de launch/async, propagación de excepciones y operadores Flow. Anticipa la secuencia de eventos y compárala con las trazas y las pruebas.",
+        "question": "Concurrencia estructurada, cancelación y propagación de errores.",
+        "body": "Laboratorio Android con launch/async, propagación de excepciones y operadores Flow. Las trazas y las pruebas documentan el comportamiento de la cancelación y la gestión de errores.",
         "evidence": "10 pruebas JVM · 4 Android locales · build/lint en CI"
       }
     },
@@ -65,13 +65,13 @@
       "title": "Compose Effect Lab",
       "stack": "Compose · Effects · Lifecycle",
       "en": {
-        "question": "See when an effect restarts and releases its resources.",
-        "body": "Change effect keys and inspect cleanup, cancellation and callback updates. Examples use LaunchedEffect, DisposableEffect and rememberUpdatedState.",
+        "question": "Effect lifecycle management in Compose.",
+        "body": "Examples using LaunchedEffect, DisposableEffect and rememberUpdatedState. Code and tests cover key changes, cancellation, resource cleanup and callback updates.",
         "evidence": "4 JVM tests · 9 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "Comprueba cuándo se reinicia un efecto y cómo libera sus recursos.",
-        "body": "Cambia las claves de los efectos y observa la cancelación, la liberación de recursos y la actualización de callbacks. Los ejemplos usan LaunchedEffect, DisposableEffect y rememberUpdatedState.",
+        "question": "Gestión del ciclo de vida de los efectos en Compose.",
+        "body": "Ejemplos de LaunchedEffect, DisposableEffect y rememberUpdatedState. El código y las pruebas cubren cambios de claves, cancelación, liberación de recursos y actualización de callbacks.",
         "evidence": "4 pruebas JVM · 9 Android locales · build/lint en CI"
       }
     },
@@ -80,13 +80,13 @@
       "title": "Coroutines Tests Mini",
       "stack": "ViewModel · StateFlow · Virtual time",
       "en": {
-        "question": "Test what happens when a newer query replaces one in flight.",
-        "body": "Use injectable dispatchers, fakes and virtual time to test ViewModel state, request replacement and failure recovery.",
+        "question": "Asynchronous state testing with virtual time.",
+        "body": "ViewModel tests using StateFlow, injectable dispatchers and virtual time. Fakes support checks for request replacement, cancellation and error recovery.",
         "evidence": "9 JVM tests · 3 local Android tests · CI build/lint"
       },
       "es": {
-        "question": "Prueba qué ocurre cuando una consulta sustituye a otra en curso.",
-        "body": "Usa dispatchers sustituibles, fakes y tiempo virtual para probar el estado del ViewModel, la sustitución de peticiones y la recuperación tras un fallo.",
+        "question": "Pruebas de estado asíncrono con tiempo virtual.",
+        "body": "Pruebas de ViewModel con StateFlow, dispatchers inyectables y tiempo virtual. Cubren sustitución de peticiones, cancelación y recuperación ante errores mediante fakes.",
         "evidence": "9 pruebas JVM · 3 Android locales · build/lint en CI"
       }
     },
@@ -95,13 +95,13 @@
       "title": "Spec Evidence Lab",
       "stack": "Python · MCP · Spec-driven development",
       "en": {
-        "question": "Check test results against a versioned specification.",
-        "body": "A CLI with an optional MCP adapter. It links acceptance criteria to JUnit results and rejects proposals for an older specification. English/Spanish summaries keep JSON statuses and hashes unchanged. A reviewer still assesses what the tests establish.",
+        "question": "Traceability across specifications, proposals and tests.",
+        "body": "A CLI with an optional MCP adapter linking acceptance criteria, JUnit reports and implementation proposals. Validation detects proposals tied to an earlier specification version; technical review still determines what the tests establish.",
         "evidence": "44 CLI tests · 5 sample tests · 4 MCP cases"
       },
       "es": {
-        "question": "Contrasta los resultados de pruebas con una especificación versionada.",
-        "body": "CLI con adaptador MCP opcional. Relaciona criterios de aceptación con resultados JUnit y rechaza propuestas para una especificación anterior. Los resúmenes en español e inglés conservan los estados y hashes del JSON. Quien revisa sigue valorando qué demuestran las pruebas.",
+        "question": "Trazabilidad entre especificaciones, propuestas y pruebas.",
+        "body": "Herramienta CLI con adaptador MCP opcional para relacionar criterios de aceptación, informes JUnit y propuestas de implementación. La validación detecta propuestas asociadas a versiones anteriores de una especificación; la revisión técnica sigue determinando qué demuestran las pruebas.",
         "evidence": "44 pruebas de CLI · 5 del ejemplo · 4 casos MCP"
       }
     },
@@ -110,13 +110,13 @@
       "title": "Vehicle Session Lab",
       "stack": "Kotlin/JVM · Callbacks · Simulated integration",
       "en": {
-        "question": "Reconnect without letting old callbacks change a new session.",
-        "body": "A simulated connected-system gateway with bounded retries, resource cleanup and timestamps for each telemetry value. An independent JVM example with no production-system or hardware connection.",
+        "question": "Session management, reconnection and callback isolation.",
+        "body": "A JVM lab for simulated integration with bounded retries, resource cleanup and telemetry freshness checks. It verifies callback isolation across sessions without connecting to hardware or production systems.",
         "evidence": "23 JVM tests · executable demo · CI"
       },
       "es": {
-        "question": "Reconecta sin que los callbacks antiguos alteren la sesión nueva.",
-        "body": "Una pasarela simulada de un sistema conectado, con reintentos limitados, liberación de recursos y marcas de tiempo para la telemetría. Ejemplo independiente en JVM, sin conexión a sistemas de producción ni hardware.",
+        "question": "Gestión de sesiones, reconexión y aislamiento de callbacks.",
+        "body": "Laboratorio JVM de integración simulada con reintentos limitados, liberación de recursos y control de vigencia de la telemetría. Permite verificar el aislamiento de callbacks entre sesiones sin conexión a hardware o sistemas de producción.",
         "evidence": "23 pruebas JVM · demo ejecutable · CI"
       }
     },
@@ -125,13 +125,13 @@
       "title": "GNSS Diagnostics Lab",
       "stack": "Python · C · ctypes · Synthetic captures",
       "en": {
-        "question": "Find missing fixes and apparent position jumps.",
-        "body": "Read bounded CSV input, match samples with reference coordinates and report gaps or apparent jumps. A Python/C implementation uses a spherical distance model and synthetic data. It does not acquire positions from a device.",
+        "question": "Positioning diagnostics and native Python/C integration.",
+        "body": "Reference comparison and diagnosis of missing positions, time gaps and apparent jumps. Python/C distance calculations use a spherical model and synthetic data; the lab does not acquire GNSS data or validate receiver accuracy.",
         "evidence": "28 tests · native build · Linux/macOS CI"
       },
       "es": {
-        "question": "Detecta muestras sin posición y saltos aparentes.",
-        "body": "Lee CSV con límites de tamaño, compara muestras con coordenadas de referencia y señala huecos o saltos aparentes. La implementación Python/C usa un modelo esférico de distancia y datos sintéticos. No obtiene posiciones de un dispositivo.",
+        "question": "Diagnóstico de posicionamiento e integración nativa Python/C.",
+        "body": "Comparación con una referencia y diagnóstico de muestras sin posición, discontinuidades temporales y saltos aparentes. Cálculo de distancias con un modelo esférico en Python/C sobre datos sintéticos; no realiza adquisición GNSS ni valida la precisión de un receptor.",
         "evidence": "28 pruebas · compilación C · CI Linux/macOS"
       }
     }
@@ -148,7 +148,7 @@
       "title_start": "Manuel Naval.",
       "title_middle": "Android, Flutter and ",
       "title_accent": "SwiftUI.",
-      "intro": "I develop and maintain Android and Flutter apps, and explore native iOS with an original SwiftUI demo. I work with architecture, integration, testing and AI-assisted development.",
+      "intro": "I develop and maintain Android and Flutter applications, focusing on architecture, integration, concurrency and testing. My public work also includes a native SwiftUI implementation and tools for AI-assisted development.",
       "cta": "View projects",
       "description": "Manuel Naval · Mobile developer. Android, Flutter, an original SwiftUI demo, architecture, testing and AI-assisted development. Professional experience and independent projects.",
       "source": "Read the implementation",
@@ -156,17 +156,17 @@
       "source_short": "Source",
       "rumbo_identity": "Rumbo / Native Android",
       "bitacora_identity": "Bitácora / Flutter",
-      "bitacora_subtitle": "The board updates after saving succeeds.",
+      "bitacora_subtitle": "State and storage coordination.",
       "capture_credit": "Actual API 37 emulator captures · English interface · fictional data.",
       "rumbo_credit": "Original Canvas landscapes by Manuel Naval.",
       "board_caption": "Task list",
       "detail_caption": "Completed task",
-      "lab_title": "Experiments and decisions",
-      "lab_intro": "Smaller experiments in concurrency, UI lifecycles, connected systems and specification-driven development. Open a project to see the implementation and its checks.",
-      "lab_hint": "Each repository includes setup instructions and the scope of its checks.",
-      "method_title": "How I work with AI",
-      "method_intro": "I describe the intended behavior in a specification before implementing it. AI helps with code changes; I review the result against the acceptance criteria and tests. Reusable instructions and MCP tools provide project context.",
-      "method_link": "Explore Spec Evidence Lab",
+      "lab_title": "Technical labs",
+      "lab_intro": "Concurrency, UI lifecycles, sessions and native interoperability. Each lab isolates a technical problem and defines its contracts and limits.",
+      "lab_hint": "Implementation, setup and verification documentation in each repository.",
+      "method_title": "AI-assisted development",
+      "method_intro": "I use specifications and acceptance criteria to guide implementation. AI supports research, development and the review of alternatives; I assess changes against the code and tests. Documented decisions and MCP tools provide context and continuity.",
+      "method_link": "Spec Evidence Lab · Source and documentation",
       "steps": [
         [
           "Define the problem",
@@ -185,12 +185,12 @@
           "Tests, decisions and enough context for someone else to continue."
         ]
       ],
-      "closing_title": "Keep exploring.",
-      "closing_body": "Read the implementation, follow a technical decision or run an experiment. GitHub brings the work together.",
+      "closing_title": "Repositories and documentation.",
+      "closing_body": "Source code, design decisions and verification results are available on GitHub. Each repository identifies its scope and the checks performed.",
       "profile_detail": "Applications, labs and development notes",
       "roadmap": "Mobile roadmap",
       "roadmap_detail": "Native iOS evidence and next platform checks",
-      "history": "Earlier Android, Flutter, Java and web exercises stay on GitHub with their scope, original notes and attribution.",
+      "history": "Shared contributions and third-party components retain their attribution in each repository.",
       "footer": "Mobile development",
       "credits": "Credits and licenses",
       "image_alts": {
@@ -202,12 +202,12 @@
         "bitacora-ios-detail.png": "Bitácora SwiftUI task detail with an action to mark it completed."
       },
       "ios_identity": "Bitácora / Native iOS demonstration",
-      "ios_subtitle": "A separate native implementation in SwiftUI.",
+      "ios_subtitle": "Operation coordination and state recovery.",
       "ios_scope": "Simulator validation; VoiceOver, physical devices and store distribution have separate checks.",
       "ios_credit": "Actual iOS 27.2 Simulator captures · English interface · fictional data.",
       "ios_detail_caption": "Task detail",
       "experience": "Experience",
-      "experience_title": "Experience across different contexts.",
+      "experience_title": "Professional experience.",
       "experience_intro": "My work at Babel spans mobile applications, integration and technical research, with contributions to solution definition and the tools the team works with.",
       "experience_role": "Development and integration at Babel",
       "experience_body": "Android development and maintenance, SDK and service integration, and diagnosing compatibility, concurrency and lifecycle issues. I also evaluate technical alternatives and document decisions so work can continue with context.",
@@ -224,32 +224,32 @@
         }
       ],
       "experience_note": "These are professional contexts. The projects below are independent examples with original code and fictional data.",
-      "selected_title": "Selected work, open to explore.",
-      "selected_intro": "Android, Flutter and native SwiftUI. Original examples that make state, persistence and recovery visible.",
+      "selected_title": "Selected projects.",
+      "selected_intro": "Android, Flutter and SwiftUI applications, alongside labs for concurrency, integration and development tooling. Source code, technical decisions and verification results.",
       "project_index": "Find a project",
       "professional_link": "Architecture · Integration · AI",
       "project_scope": "Independent projects",
       "hero_platforms": "Specifications / Implementation / Testing",
-      "technical_title": "Interfaces, state and systems.",
-      "technical_intro": "The screen is one part of the work. These examples show how I handle data, asynchronous work and the checks that keep changes understandable.",
+      "technical_title": "Architecture, integration and testing.",
+      "technical_intro": "The projects document decisions about architecture, state management, integration and persistence, together with the tests used to assess their behavior.",
       "technical_rows": [
         {
           "title": "State & concurrency",
-          "body": "Explicit ownership, cancellation and confirmed state. Follow the lifetime of a request and what happens when a newer one replaces it.",
+          "body": "Structured concurrency, cancellation and control of late results to maintain consistent state throughout the application lifecycle.",
           "stack": "Kotlin · Coroutines · Flow · Swift actors",
           "target": "coroutine-lab",
           "link": "Inspect Coroutine Lab"
         },
         {
           "title": "Integration & persistence",
-          "body": "Clear boundaries between the UI and data. Recover from failed reads, preserve saved work and reconcile uncertain writes.",
+          "body": "Contracts between UI, services and storage. Read error handling, confirmed writes and recovery of persisted state.",
           "stack": "Retrofit · Room · Repositories · Local storage",
           "target": "rumbo-android",
           "link": "Explore Rumbo"
         },
         {
           "title": "Testing & specifications",
-          "body": "Describe the behavior, implement it and check failure as well as success. Keep acceptance criteria, test results and decisions connected.",
+          "body": "Acceptance criteria linked to state, integration and UI tests, including failure and recovery checks.",
           "stack": "JUnit · XCTest · CI · Python · MCP",
           "target": "spec-evidence-lab",
           "link": "Explore Spec Evidence Lab"
@@ -281,7 +281,7 @@
       "title_start": "Manuel Naval.",
       "title_middle": "Android, Flutter y ",
       "title_accent": "SwiftUI.",
-      "intro": "Desarrollo y mantengo aplicaciones Android y Flutter, y exploro iOS nativo con una demo propia en SwiftUI. Trabajo con arquitectura, integración, pruebas e IA aplicada al desarrollo.",
+      "intro": "Desarrollo y mantengo aplicaciones Android y Flutter, con foco en arquitectura, integración, concurrencia y pruebas. Mi trabajo público incluye una implementación nativa en SwiftUI y herramientas para el desarrollo asistido por IA.",
       "cta": "Ver proyectos",
       "description": "Manuel Naval · Desarrollador móvil. Android, Flutter, una demo propia SwiftUI, arquitectura, pruebas e IA aplicada al desarrollo. Experiencia profesional y proyectos independientes.",
       "source": "Leer la implementación",
@@ -289,17 +289,17 @@
       "source_short": "Código",
       "rumbo_identity": "Rumbo / Android nativo",
       "bitacora_identity": "Bitácora / Flutter",
-      "bitacora_subtitle": "El tablero se actualiza después de guardar.",
+      "bitacora_subtitle": "Coordinación entre estado y almacenamiento.",
       "capture_credit": "Capturas reales del emulador API 37 · interfaz inglesa · datos ficticios.",
       "rumbo_credit": "Paisajes Canvas originales de Manuel Naval.",
       "board_caption": "Lista de tareas",
       "detail_caption": "Tarea completada",
-      "lab_title": "Experimentos y decisiones",
-      "lab_intro": "Experimentos de concurrencia, ciclo de vida de la UI, sistemas conectados y desarrollo guiado por especificaciones. Abre un proyecto para ver su implementación y sus comprobaciones.",
-      "lab_hint": "Cada repositorio incluye instrucciones de ejecución y el alcance de sus comprobaciones.",
-      "method_title": "Cómo trabajo con IA",
-      "method_intro": "Describo el comportamiento en una especificación antes de implementar. La IA me ayuda con el código; después lo reviso con los criterios de aceptación y las pruebas. Las instrucciones reutilizables y las herramientas MCP aportan el contexto del proyecto.",
-      "method_link": "Explorar Spec Evidence Lab",
+      "lab_title": "Laboratorios técnicos",
+      "lab_intro": "Concurrencia, ciclo de vida de la interfaz, sesiones e interoperabilidad nativa. Cada laboratorio aísla un problema técnico y explicita sus contratos y límites.",
+      "lab_hint": "Documentación de implementación, ejecución y verificación en cada repositorio.",
+      "method_title": "Desarrollo asistido por IA",
+      "method_intro": "Parto de especificaciones y criterios de aceptación para orientar la implementación. Utilizo IA para investigar, desarrollar y revisar alternativas; contrasto los cambios con el código y las pruebas. Las decisiones documentadas y las herramientas MCP aportan contexto y continuidad.",
+      "method_link": "Spec Evidence Lab · Código y documentación",
       "steps": [
         [
           "Definir el problema",
@@ -318,12 +318,12 @@
           "Pruebas, decisiones y contexto suficiente para que otra persona continúe."
         ]
       ],
-      "closing_title": "Sigue explorando.",
-      "closing_body": "Lee una implementación, recorre una decisión técnica o ejecuta un experimento. GitHub reúne el trabajo.",
+      "closing_title": "Repositorios y documentación.",
+      "closing_body": "El código, las decisiones de diseño y los resultados de verificación están disponibles en GitHub. Cada repositorio identifica su alcance y las validaciones realizadas.",
       "profile_detail": "Aplicaciones, laboratorios y notas de desarrollo",
       "roadmap": "Hoja de ruta móvil",
       "roadmap_detail": "Evidencia iOS nativa y siguientes comprobaciones de plataforma",
-      "history": "Los ejercicios anteriores de Android, Flutter, Java y web siguen en GitHub con su alcance, notas originales y atribución.",
+      "history": "Las contribuciones compartidas y los componentes de terceros mantienen su atribución en cada repositorio.",
       "footer": "Desarrollo móvil",
       "credits": "Créditos y licencias",
       "image_alts": {
@@ -335,12 +335,12 @@
         "bitacora-ios-detail.png": "Detalle de tarea de Bitácora SwiftUI con acción para marcar completada."
       },
       "ios_identity": "Bitácora / iOS nativo · demostración",
-      "ios_subtitle": "Una implementación nativa independiente con SwiftUI.",
+      "ios_subtitle": "Coordinación de operaciones y recuperación de estado.",
       "ios_scope": "Validación en Simulator; VoiceOver, dispositivo físico y tiendas mantienen sus propias comprobaciones.",
       "ios_credit": "Capturas reales de iOS Simulator 27.2 · interfaz inglesa · datos ficticios.",
       "ios_detail_caption": "Detalle de tarea",
       "experience": "Experiencia",
-      "experience_title": "Experiencia en distintos contextos.",
+      "experience_title": "Experiencia profesional.",
       "experience_intro": "Mi recorrido en Babel combina aplicaciones móviles, integración e investigación técnica, con aportaciones a la definición de soluciones y a las herramientas de trabajo del equipo.",
       "experience_role": "Desarrollo e integración en Babel",
       "experience_body": "Desarrollo y mantenimiento Android, integración de SDK y servicios, y resolución de problemas de compatibilidad, concurrencia y ciclo de vida. También evalúo alternativas técnicas y documento decisiones para dar continuidad al trabajo.",
@@ -357,32 +357,32 @@
         }
       ],
       "experience_note": "Estos son contextos profesionales. Los proyectos de abajo son ejemplos independientes con código original y datos ficticios.",
-      "selected_title": "Proyectos para explorar por dentro.",
-      "selected_intro": "Android, Flutter y SwiftUI nativo. Ejemplos originales que permiten observar el estado, la persistencia y la recuperación.",
+      "selected_title": "Proyectos seleccionados.",
+      "selected_intro": "Aplicaciones Android, Flutter y SwiftUI, junto con laboratorios de concurrencia, integración y herramientas de desarrollo. Código, decisiones técnicas y resultados de verificación.",
       "project_index": "Encontrar un proyecto",
       "professional_link": "Arquitectura · Integración · IA",
       "project_scope": "Proyectos independientes",
       "hero_platforms": "Especificaciones / Implementación / Pruebas",
-      "technical_title": "Interfaces, estado y sistemas.",
-      "technical_intro": "La pantalla es una parte del trabajo. Estos ejemplos muestran cómo trato los datos, el trabajo asíncrono y las comprobaciones que permiten entender cada cambio.",
+      "technical_title": "Arquitectura, integración y pruebas.",
+      "technical_intro": "Los proyectos documentan decisiones de arquitectura, gestión de estado, integración y persistencia, junto con las pruebas utilizadas para evaluar su comportamiento.",
       "technical_rows": [
         {
           "title": "Estado y concurrencia",
-          "body": "Propiedad explícita, cancelación y estado confirmado. Sigue el ciclo de una petición y lo que ocurre cuando otra la sustituye.",
+          "body": "Concurrencia estructurada, cancelación y control de resultados tardíos para mantener un estado coherente durante el ciclo de vida de la aplicación.",
           "stack": "Kotlin · Coroutines · Flow · Actores Swift",
           "target": "coroutine-lab",
           "link": "Revisar Coroutine Lab"
         },
         {
           "title": "Integración y persistencia",
-          "body": "Límites claros entre la interfaz y los datos. Recuperar lecturas fallidas, conservar el trabajo guardado y reconciliar escrituras sin confirmar.",
+          "body": "Contratos entre interfaz, servicios y almacenamiento. Tratamiento de errores de lectura, confirmación de escrituras y recuperación del estado persistido.",
           "stack": "Retrofit · Room · Repositorios · Persistencia local",
           "target": "rumbo-android",
           "link": "Explorar Rumbo"
         },
         {
           "title": "Pruebas y especificaciones",
-          "body": "Describir el comportamiento, implementarlo y comprobar tanto el éxito como los fallos. Conectar criterios de aceptación, resultados y decisiones.",
+          "body": "Criterios de aceptación vinculados a pruebas de estado, integración e interfaz, con verificación de fallos y recuperación.",
           "stack": "JUnit · XCTest · CI · Python · MCP",
           "target": "spec-evidence-lab",
           "link": "Explorar Spec Evidence Lab"
