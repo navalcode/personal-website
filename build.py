@@ -1,6 +1,7 @@
 """Generate complete EN/ES HTML; all content remains usable without JavaScript."""
 from html import escape
 import json
+import hashlib
 import struct
 from pathlib import Path
 
@@ -20,6 +21,7 @@ def render(language):
     roadmap = 'https://github.com/navalcode/navalcode/blob/main/MOBILE_ROADMAP' + ('.es' if es else '') + '.md'
     title = 'Manuel Naval · ' + c['footer']
     e = escape
+    style_version = hashlib.sha256((ROOT / 'docs/styles.css').read_bytes()).hexdigest()[:12]
 
     def arrow():
         return '<span aria-hidden="true">↗</span>'
@@ -63,7 +65,7 @@ def render(language):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(c['description'])}"><meta property="og:type" content="website">
 <link rel="canonical" href="{ORIGIN + ('es.html' if es else '')}"><link rel="alternate" hreflang="en" href="{ORIGIN}"><link rel="alternate" hreflang="es" href="{ORIGIN}es.html">
 <link rel="preload" href="assets/fonts/IBMPlexSans.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v={style_version}"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 </head>
 <body>
