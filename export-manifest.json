@@ -9,23 +9,27 @@
   },
   {
     "path": "README.md",
-    "sha256": "e60b668de707b9693b2149b18444b8700f71b02147d1cf3f248315cf568b65ca"
+    "sha256": "38e12e9aa58aa0e7e64b3c8f0837681f7f51f765aa3461457fc0e626c8ff0c6a"
   },
   {
     "path": "README.es.md",
-    "sha256": "578b77e04d7f57b14b3ff7f3733a84ebed13cf0794870bb663126c7f9e533525"
+    "sha256": "097631750fc8d92291987e126cab1992e794a4ce89e97ddcddd56aeaa34f3936"
   },
   {
     "path": "DESIGN.md",
-    "sha256": "88af019b5133f47bcd871b0251053d63531e4dd38568cc76d4a8a18a8c28a42c"
+    "sha256": "8da627521b3edfe41315fdd6c6b1978e555e4fec3d041df646af9ceeae88e806"
+  },
+  {
+    "path": "PRODUCT.md",
+    "sha256": "a6b2ae458f539f344c35c6447155de800e5c86dc930b49c915846886d88374a5"
   },
   {
     "path": "THIRD_PARTY.md",
-    "sha256": "2cb923d8fb875f8f833bf75a503e1bb2df21a5a57f7a562519d578fed8016457"
+    "sha256": "72e0ce8e5bd184cefa89d76c1fd4812884051bc6ca765ec80c876fb60150388b"
   },
   {
     "path": "third_party.json",
-    "sha256": "dcb597e44b7bb364e46922d7da0aaede91b265e48e63ecf6d6e43cac086f3557"
+    "sha256": "ace845602bc161b4931614ad34a7d0d339484c42803f7e9b7913b7978d05d00c"
   },
   {
     "path": "site.json",
@@ -33,31 +37,31 @@
   },
   {
     "path": "content.json",
-    "sha256": "a546e5d2c55de2b49395b5eb5c473bc156bb8e06eccbbba01e2dbedffeb73005"
+    "sha256": "ab3e67bee2a4d44240705af8862b7419175e912b675f170312ed58cd4b53e695"
   },
   {
     "path": "build.py",
-    "sha256": "1332a528f181c622929a98ecd3457b8ec7b17622be5e9d3ea5e98cc3bb00f09d"
+    "sha256": "3064429a4ae751b16eebbff866a9658560d6689dfb6b7e6464b76f5c88068804"
   },
   {
     "path": "check.py",
-    "sha256": "be3f547fbe4fae784edabb9bc61279f8e2ce9be688a353b2f43df622a9d8f10a"
+    "sha256": "a2237faf01e118a2ae068866f46c06e4ff69e36bed0419c1954486f4da36c449"
   },
   {
     "path": "docs/index.html",
-    "sha256": "2685387cbe3d7131e754c75563ea8e358768bc7b33a2b17e0d9502800790806a"
+    "sha256": "bd4bc5b7fb7556f87234f444900480bc3984ca3965a5033d21fe3004f7555d8a"
   },
   {
     "path": "docs/es.html",
-    "sha256": "85916d652733f667f02359c84c39ed8157a3119379b7609e5683a7b3ee2e03e4"
+    "sha256": "d39818721c0b47b6efcec2e53548a5459e237f3a0cb90de523e0cc054a578c97"
   },
   {
     "path": "docs/styles.css",
-    "sha256": "224b7eb7bd4d81c3c7394fa6cc75e03fe81a32aa80a09d6aef81291e45ebde73"
+    "sha256": "ec3e39d9d74dd15b3c574e6390f7e8426daad40c489a6bb6b22af0b93e3011c8"
   },
   {
     "path": "docs/motion.js",
-    "sha256": "7645633297ec4af3a6773d60eabd1e6b5816142910263ac0914e0124dc89584e"
+    "sha256": "ecb64efd6d3d7178238153115ab3e58ef991df7ed866396fcce8cf2d942cb42e"
   },
   {
     "path": "docs/.nojekyll",
@@ -90,6 +94,14 @@
   {
     "path": "docs/assets/favicon.svg",
     "sha256": "eae10160a2d30ea68b815f58593f554c2eca15464b74ff8516531f8b3146e5f5"
+  },
+  {
+    "path": "docs/assets/fonts/IBMPlexSans.ttf",
+    "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3"
+  },
+  {
+    "path": "docs/assets/fonts/IBMPlexSans-OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
   },
   {
     "path": "docs/assets/fonts/Outfit.woff2",

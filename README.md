@@ -6,7 +6,7 @@ Source for Manuel Naval's personal website. GitHub is the main place to read the
 
 ## Develop
 
-Python 3 generates complete static pages from `content.json`. No package installation or backend is required. Outfit/Fraunces, screenshots, GSAP 3.15.0 and ScrollTrigger are local assets; there are no font-CDN requests or analytics.
+Python 3 generates complete static pages from `content.json`. No package installation or backend is required. IBM Plex Sans and screenshots are local assets; earlier font and animation assets retain their notices but are not loaded; there are no font-CDN requests or analytics.
 
 ```sh
 python3 build.py
@@ -14,13 +14,13 @@ python3 check.py
 python3 -m http.server 8048 --directory docs --bind 127.0.0.1
 ```
 
-Edit content, renderer, CSS or the optional `docs/motion.js`, then regenerate and reload. `check.py` validates translation keys, nine project/evidence routes, local files, calculated contrast and pinned asset hashes. Those source checks do not replace browser review.
+Edit content, renderer, CSS, then regenerate and reload. `check.py` validates translation keys, nine project/evidence routes, local files, calculated contrast and pinned asset hashes. Those source checks do not replace browser review.
 
 ## Design and behavior
 
-[DESIGN.md](DESIGN.md) explains the shared visual system and six layouts: an introduction with app captures, a Rumbo gallery, a Bitácora case study, an expandable lab index, a four-step work sequence and links to further projects. Captures come from the actual API 37 Android demos and iOS 27.2 Simulator, in English with fictional data. Rumbo's landscapes are original Canvas artwork; no generated design concept is presented as a running app.
+[DESIGN.md](DESIGN.md) explains the IBM Plex Sans typography, mineral/blue palette and compositions. Manuel Naval and his capabilities come first: state/concurrency, integration/persistence and testing/specifications, each linked to original examples. Babel/Renfe/AWAI appear only in experience. A directory opens nine Android, Flutter, SwiftUI, integration and tooling projects. [PRODUCT.md](PRODUCT.md) records audience and claim boundaries. [Impeccable](https://github.com/pbakaus/impeccable) is a design reference; its engine is not installed or shipped.
 
-HTML owns navigation, links, landmarks and native `details/summary` disclosures. GSAP only scales/fades media and pins the lab context on sufficiently wide/tall desktop windows. `prefers-reduced-motion` disables those effects and CSS movement. Content and disclosures remain usable without JavaScript. Fonts and vendor notices are preserved separately from the original MIT source.
+Captures come from original demos in Android API 37 emulator and iOS 27.2 Simulator, in English with fictional data. Professional contexts are described separately without corporate materials. HTML owns navigation, landmarks and native `details/summary` disclosures. The page loads no JavaScript; the lab index uses CSS sticky on desktop. Focus, selection, controls and reflow belong to the visual system. Third-party notices and licenses remain intact.
 
 Local app checks cited by the redesign: Rumbo: 35 JVM/9 emulator checks and Bitácora: 37 controller/widget checks plus native persistence. Each repository documents validation limits. Follow each project’s CI link for its current runs. Bitácora SwiftUI adds a native iOS demonstration with 43 macOS tests, two native XCTest cases and Simulator evidence. VoiceOver, physical-device protection and stores remain separate checks.
 

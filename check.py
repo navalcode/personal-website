@@ -9,7 +9,7 @@ import build
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / 'docs'
-SCRIPTS = {'assets/vendor/gsap.min.js', 'assets/vendor/ScrollTrigger.min.js', 'motion.js'}
+SCRIPTS = set()
 
 
 class Page(HTMLParser):
@@ -53,6 +53,16 @@ def check():
     for p in build.PROJECTS:
         assert set(p['en']) == set(p['es']) == {'question', 'body', 'evidence'}
         assert all(p[lang][key].strip() for lang in ['en', 'es'] for key in p[lang])
+    for language in ['en', 'es']:
+        contexts = build.COPY[language]['experience_contexts']
+        assert [item['name'] for item in contexts] == ['Renfe', 'AWAI']
+        assert all(set(item) == {'name', 'area', 'body'} and all(item.values()) for item in contexts)
+    for language in ['en', 'es']:
+        assert len(build.COPY[language]['technical_rows']) == 3
+        for row in build.COPY[language]['technical_rows']:
+            assert set(row) == {'title', 'body', 'stack', 'target', 'link'}
+            assert row['target'] in {project['id'] for project in build.PROJECTS}
+            assert all(row.values())
     assert len(build.COPY['en']['steps']) == len(build.COPY['es']['steps']) == 4
     assert set(build.COPY['en']['image_alts']) == set(build.COPY['es']['image_alts'])
     results = []
@@ -76,12 +86,19 @@ def check():
         for p in build.PROJECTS:
             repo = 'https://github.com/navalcode/' + p['id']
             assert repo in page.links and repo + '/actions' in page.links
+        assert '#experience' in page.links and 'experience' in page.ids
+        assert 'Babel' in text and 'Renfe' in text and 'AWAI' in text
+        opening = text.split('<section class="experience chapter"')[0]
+        assert not any(name in opening for name in ['Babel', 'Renfe', 'AWAI'])
+        assert 'engineer' not in text.lower() and 'ingenier' not in text.lower()
+        assert '<h1 id="home-title">Manuel Naval.</h1>' in text
+        assert 'automotive' not in text.lower(), 'restricted sector label in public page'
         assert '#main' in page.links and build.COPY[language]['other_file'] in page.links
         results.append({'language': language, 'projects': page.articles, 'disclosures': page.disclosures, 'layout_labels': sorted(page.layouts), 'links': len(page.links), 'unique_html_resources': len(set(page.resources))})
     css = (DOCS / 'styles.css').read_text()
     for resource in re.findall(r"url\(['\"]?([^)'\"]+)", css):
         assert not urlsplit(resource).scheme and (DOCS / resource).is_file(), 'invalid CSS resource'
-    pairs = [('body', '#202421', '#faf8f3', 4.5), ('muted', '#5e625c', '#faf8f3', 4.5), ('accent', '#9b432f', '#faf8f3', 4.5), ('button', '#ffffff', '#9b432f', 4.5), ('selection', '#9b432f', '#f2e3db', 4.5), ('control_outline', '#85877e', '#faf8f3', 3)]
+    pairs = [('body', '#17252f', '#f5f6f7', 4.5), ('muted', '#52616b', '#f5f6f7', 4.5), ('accent', '#2348b3', '#f5f6f7', 4.5), ('button', '#ffffff', '#2348b3', 4.5), ('selection', '#17252f', '#e5eafa', 4.5), ('control_outline', '#7b8790', '#f5f6f7', 3), ('gallery_caption', '#52616b', '#e4e9ee', 4.5)]
     contrast = {}
     for name, fg, bg, minimum in pairs:
         assert fg in css.lower() and bg in css.lower(), 'contrast tokens absent from CSS'

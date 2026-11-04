@@ -25,6 +25,18 @@
       "sha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8",
       "source": "https://github.com/google/fonts/tree/main/ofl/fraunces",
       "license": "SIL OFL1.1"
+    },
+    {
+      "path": "docs/assets/fonts/IBMPlexSans.ttf",
+      "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+      "source": "https://raw.githubusercontent.com/google/fonts/bbda7253fc363238b05d97515ca71f8ae49c4fa9/ofl/ibmplexsans/IBMPlexSans%5Bwdth,wght%5D.ttf",
+      "license": "SIL OFL 1.1"
+    },
+    {
+      "path": "docs/assets/fonts/IBMPlexSans-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "source": "https://raw.githubusercontent.com/google/fonts/bbda7253fc363238b05d97515ca71f8ae49c4fa9/ofl/ibmplexsans/OFL.txt",
+      "license": "SIL OFL 1.1"
     }
   ],
   "license_review": "Standard license permits use on this personal website; no visual animation builder is being offered. Proprietary notices retained. GSAP is not MIT."

@@ -108,15 +108,15 @@
     {
       "id": "vehicle-session-lab",
       "title": "Vehicle Session Lab",
-      "stack": "Kotlin/JVM · Callbacks · Automotive simulation",
+      "stack": "Kotlin/JVM · Callbacks · Simulated integration",
       "en": {
         "question": "Reconnect without letting old callbacks change a new session.",
-        "body": "A simulated vehicle gateway with bounded retries, resource cleanup and timestamps for each telemetry value. It runs on the JVM; it does not connect to Android Car or vehicle hardware.",
+        "body": "A simulated connected-system gateway with bounded retries, resource cleanup and timestamps for each telemetry value. An independent JVM example with no production-system or hardware connection.",
         "evidence": "23 JVM tests · executable demo · CI"
       },
       "es": {
         "question": "Reconecta sin que los callbacks antiguos alteren la sesión nueva.",
-        "body": "Simulación de una conexión con un vehículo: reintentos acotados, liberación de recursos y marcas de tiempo para cada dato de telemetría. Se ejecuta en la JVM, sin conexión con Android Car ni hardware de vehículo.",
+        "body": "Una pasarela simulada de un sistema conectado, con reintentos limitados, liberación de recursos y marcas de tiempo para la telemetría. Ejemplo independiente en JVM, sin conexión a sistemas de producción ni hardware.",
         "evidence": "23 pruebas JVM · demo ejecutable · CI"
       }
     },
@@ -145,12 +145,12 @@
       "work": "Projects",
       "method": "Approach",
       "profile": "GitHub profile",
-      "title_start": "Mobile engineering.",
+      "title_start": "Manuel Naval.",
       "title_middle": "Android, Flutter and ",
       "title_accent": "SwiftUI.",
-      "intro": "I’m Manuel Naval. I develop and maintain Android and Flutter apps, and explore native iOS through an original SwiftUI demo.",
+      "intro": "I develop and maintain Android and Flutter apps, and explore native iOS with an original SwiftUI demo. I work with architecture, integration, testing and AI-assisted development.",
       "cta": "View projects",
-      "description": "Manuel Naval, mobile engineer. Android, Flutter and an original native SwiftUI demo; architecture, concurrency, testing and AI-assisted engineering.",
+      "description": "Manuel Naval · Mobile developer. Android, Flutter, an original SwiftUI demo, architecture, testing and AI-assisted development. Professional experience and independent projects.",
       "source": "Read the implementation",
       "ci": "CI history",
       "source_short": "Source",
@@ -161,8 +161,8 @@
       "rumbo_credit": "Original Canvas landscapes by Manuel Naval.",
       "board_caption": "Task list",
       "detail_caption": "Completed task",
-      "lab_title": "Concurrency, UI effects and integration",
-      "lab_intro": "Run an experiment, follow its state changes and read the tests. These labs cover coroutine lifetimes, Compose effects, specifications and simulated integrations.",
+      "lab_title": "Experiments and decisions",
+      "lab_intro": "Smaller experiments in concurrency, UI lifecycles, connected systems and specification-driven development. Open a project to see the implementation and its checks.",
       "lab_hint": "Each repository includes setup instructions and the scope of its checks.",
       "method_title": "How I work with AI",
       "method_intro": "I describe the intended behavior in a specification before implementing it. AI helps with code changes; I review the result against the acceptance criteria and tests. Reusable instructions and MCP tools provide project context.",
@@ -185,13 +185,13 @@
           "Tests, decisions and enough context for someone else to continue."
         ]
       ],
-      "closing_title": "More code on GitHub",
-      "closing_body": "The collection includes Android and Flutter apps plus a native SwiftUI demonstration. Each repository records how it was tested and what remains outside its scope.",
-      "profile_detail": "Applications, labs and engineering notes",
+      "closing_title": "Keep exploring.",
+      "closing_body": "Read the implementation, follow a technical decision or run an experiment. GitHub brings the work together.",
+      "profile_detail": "Applications, labs and development notes",
       "roadmap": "Mobile roadmap",
       "roadmap_detail": "Native iOS evidence and next platform checks",
       "history": "Earlier Android, Flutter, Java and web exercises stay on GitHub with their scope, original notes and attribution.",
-      "footer": "Mobile engineering",
+      "footer": "Mobile development",
       "credits": "Credits and licenses",
       "image_alts": {
         "rumbo-explore.png": "Rumbo trip catalogue with a mountain destination and a demo price.",
@@ -205,7 +205,56 @@
       "ios_subtitle": "A separate native implementation in SwiftUI.",
       "ios_scope": "Simulator validation; VoiceOver, physical devices and store distribution have separate checks.",
       "ios_credit": "Actual iOS 27.2 Simulator captures · English interface · fictional data.",
-      "ios_detail_caption": "Task detail"
+      "ios_detail_caption": "Task detail",
+      "experience": "Experience",
+      "experience_title": "Experience across different contexts.",
+      "experience_intro": "At Babel, I work across mobile development, maintenance and integration. Sales and transport bring business context; advanced technology brings the challenge of connecting applications and systems.",
+      "experience_role": "Mobile development at Babel",
+      "experience_body": "From understanding a requirement to maintaining the application: turning business needs into clear behavior, reviewing implementation choices and making room for failure and recovery.",
+      "experience_contexts": [
+        {
+          "name": "Renfe",
+          "area": "Sales & rail transport",
+          "body": "Experience in the sales and rail transport domain, where business processes and a clear digital experience need to work together."
+        },
+        {
+          "name": "AWAI",
+          "area": "Advanced technology & integration",
+          "body": "Work with advanced technologies and connected applications, looking beyond the screen to how the wider system behaves."
+        }
+      ],
+      "experience_note": "These are professional contexts. The projects below are independent examples with original code and fictional data.",
+      "selected_title": "Selected work, open to explore.",
+      "selected_intro": "Android, Flutter and native SwiftUI. Original examples that make state, persistence and recovery visible.",
+      "project_index": "Find a project",
+      "professional_link": "Architecture · Integration · AI",
+      "project_scope": "Independent projects",
+      "hero_platforms": "Specifications / Implementation / Testing",
+      "technical_title": "Interfaces, state and systems.",
+      "technical_intro": "The screen is one part of the work. These examples show how I handle data, asynchronous work and the checks that keep changes understandable.",
+      "technical_rows": [
+        {
+          "title": "State & concurrency",
+          "body": "Explicit ownership, cancellation and confirmed state. Follow the lifetime of a request and what happens when a newer one replaces it.",
+          "stack": "Kotlin · Coroutines · Flow · Swift actors",
+          "target": "coroutine-lab",
+          "link": "Inspect Coroutine Lab"
+        },
+        {
+          "title": "Integration & persistence",
+          "body": "Clear boundaries between the UI and data. Recover from failed reads, preserve saved work and reconcile uncertain writes.",
+          "stack": "Retrofit · Room · Repositories · Local storage",
+          "target": "rumbo-android",
+          "link": "Explore Rumbo"
+        },
+        {
+          "title": "Testing & specifications",
+          "body": "Describe the behavior, implement it and check failure as well as success. Keep acceptance criteria, test results and decisions connected.",
+          "stack": "JUnit · XCTest · CI · Python · MCP",
+          "target": "spec-evidence-lab",
+          "link": "Explore Spec Evidence Lab"
+        }
+      ]
     },
     "es": {
       "other": "English",
@@ -215,12 +264,12 @@
       "work": "Proyectos",
       "method": "Método",
       "profile": "Perfil GitHub",
-      "title_start": "Ingeniería móvil.",
+      "title_start": "Manuel Naval.",
       "title_middle": "Android, Flutter y ",
       "title_accent": "SwiftUI.",
-      "intro": "Soy Manuel Naval. Desarrollo y mantengo apps Android y Flutter; amplío iOS nativo con una demostración original SwiftUI.",
+      "intro": "Desarrollo y mantengo aplicaciones Android y Flutter, y exploro iOS nativo con una demo propia en SwiftUI. Trabajo con arquitectura, integración, pruebas e IA aplicada al desarrollo.",
       "cta": "Ver proyectos",
-      "description": "Manuel Naval, ingeniero móvil. Android, Flutter y una demostración nativa SwiftUI; arquitectura, concurrencia, pruebas e ingeniería asistida por IA.",
+      "description": "Manuel Naval · Desarrollador móvil. Android, Flutter, una demo propia SwiftUI, arquitectura, pruebas e IA aplicada al desarrollo. Experiencia profesional y proyectos independientes.",
       "source": "Leer la implementación",
       "ci": "Historial de CI",
       "source_short": "Código",
@@ -231,8 +280,8 @@
       "rumbo_credit": "Paisajes Canvas originales de Manuel Naval.",
       "board_caption": "Lista de tareas",
       "detail_caption": "Tarea completada",
-      "lab_title": "Concurrencia, efectos de UI e integración",
-      "lab_intro": "Ejecuta un experimento, sigue sus cambios de estado y lee las pruebas. Estos laboratorios cubren el ciclo de vida de las coroutines, los efectos de Compose, las especificaciones y las integraciones simuladas.",
+      "lab_title": "Experimentos y decisiones",
+      "lab_intro": "Experimentos de concurrencia, ciclo de vida de la UI, sistemas conectados y desarrollo guiado por especificaciones. Abre un proyecto para ver su implementación y sus comprobaciones.",
       "lab_hint": "Cada repositorio incluye instrucciones de ejecución y el alcance de sus comprobaciones.",
       "method_title": "Cómo trabajo con IA",
       "method_intro": "Describo el comportamiento en una especificación antes de implementar. La IA me ayuda con el código; después lo reviso con los criterios de aceptación y las pruebas. Las instrucciones reutilizables y las herramientas MCP aportan el contexto del proyecto.",
@@ -255,13 +304,13 @@
           "Pruebas, decisiones y contexto suficiente para que otra persona continúe."
         ]
       ],
-      "closing_title": "Más código en GitHub",
-      "closing_body": "La colección incluye apps Android y Flutter y una demostración SwiftUI nativa. Cada repositorio registra cómo se ha probado y qué queda fuera de su alcance.",
-      "profile_detail": "Aplicaciones, laboratorios y notas de ingeniería",
+      "closing_title": "Sigue explorando.",
+      "closing_body": "Lee una implementación, recorre una decisión técnica o ejecuta un experimento. GitHub reúne el trabajo.",
+      "profile_detail": "Aplicaciones, laboratorios y notas de desarrollo",
       "roadmap": "Hoja de ruta móvil",
       "roadmap_detail": "Evidencia iOS nativa y siguientes comprobaciones de plataforma",
       "history": "Los ejercicios anteriores de Android, Flutter, Java y web siguen en GitHub con su alcance, notas originales y atribución.",
-      "footer": "Ingeniería móvil",
+      "footer": "Desarrollo móvil",
       "credits": "Créditos y licencias",
       "image_alts": {
         "rumbo-explore.png": "Catálogo de Rumbo con una escapada de montaña y un precio ficticio.",
@@ -275,7 +324,56 @@
       "ios_subtitle": "Una implementación nativa independiente con SwiftUI.",
       "ios_scope": "Validación en Simulator; VoiceOver, dispositivo físico y tiendas mantienen sus propias comprobaciones.",
       "ios_credit": "Capturas reales de iOS Simulator 27.2 · interfaz inglesa · datos ficticios.",
-      "ios_detail_caption": "Detalle de tarea"
+      "ios_detail_caption": "Detalle de tarea",
+      "experience": "Experiencia",
+      "experience_title": "Experiencia en distintos contextos.",
+      "experience_intro": "En Babel, mi recorrido combina desarrollo móvil, mantenimiento e integración. Las ventas y el transporte aportan contexto de negocio; las tecnologías avanzadas, el reto de conectar aplicaciones y sistemas.",
+      "experience_role": "Desarrollo móvil en Babel",
+      "experience_body": "Desde entender una necesidad hasta mantener la aplicación: traducir el negocio a comportamientos claros, revisar las decisiones de implementación y contemplar los fallos y la recuperación.",
+      "experience_contexts": [
+        {
+          "name": "Renfe",
+          "area": "Ventas y transporte ferroviario",
+          "body": "Experiencia en el ámbito de las ventas y el transporte ferroviario, donde los procesos de negocio y una experiencia digital clara tienen que funcionar juntos."
+        },
+        {
+          "name": "AWAI",
+          "area": "Tecnologías avanzadas e integración",
+          "body": "Trabajo con tecnologías avanzadas y aplicaciones conectadas, con una mirada que va más allá de la pantalla y alcanza el comportamiento del sistema."
+        }
+      ],
+      "experience_note": "Estos son contextos profesionales. Los proyectos de abajo son ejemplos independientes con código original y datos ficticios.",
+      "selected_title": "Proyectos para explorar por dentro.",
+      "selected_intro": "Android, Flutter y SwiftUI nativo. Ejemplos originales que permiten observar el estado, la persistencia y la recuperación.",
+      "project_index": "Encontrar un proyecto",
+      "professional_link": "Arquitectura · Integración · IA",
+      "project_scope": "Proyectos independientes",
+      "hero_platforms": "Especificaciones / Implementación / Pruebas",
+      "technical_title": "Interfaces, estado y sistemas.",
+      "technical_intro": "La pantalla es una parte del trabajo. Estos ejemplos muestran cómo trato los datos, el trabajo asíncrono y las comprobaciones que permiten entender cada cambio.",
+      "technical_rows": [
+        {
+          "title": "Estado y concurrencia",
+          "body": "Propiedad explícita, cancelación y estado confirmado. Sigue el ciclo de una petición y lo que ocurre cuando otra la sustituye.",
+          "stack": "Kotlin · Coroutines · Flow · Actores Swift",
+          "target": "coroutine-lab",
+          "link": "Revisar Coroutine Lab"
+        },
+        {
+          "title": "Integración y persistencia",
+          "body": "Límites claros entre la interfaz y los datos. Recuperar lecturas fallidas, conservar el trabajo guardado y reconciliar escrituras sin confirmar.",
+          "stack": "Retrofit · Room · Repositorios · Persistencia local",
+          "target": "rumbo-android",
+          "link": "Explorar Rumbo"
+        },
+        {
+          "title": "Pruebas y especificaciones",
+          "body": "Describir el comportamiento, implementarlo y comprobar tanto el éxito como los fallos. Conectar criterios de aceptación, resultados y decisiones.",
+          "stack": "JUnit · XCTest · CI · Python · MCP",
+          "target": "spec-evidence-lab",
+          "link": "Explorar Spec Evidence Lab"
+        }
+      ]
     }
   }
 }

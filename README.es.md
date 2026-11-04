@@ -6,7 +6,7 @@ Fuentes de la web personal de Manuel Naval. GitHub es el lugar principal para le
 
 ## Desarrollo
 
-Python 3 genera páginas estáticas completas desde `content.json`. No requiere instalar paquetes ni un backend. Outfit/Fraunces, capturas, GSAP 3.15.0 y ScrollTrigger son recursos locales; no hay peticiones a CDN de fuentes ni analítica.
+Python 3 genera páginas estáticas completas desde `content.json`. No requiere instalar paquetes ni un backend. IBM Plex Sans y las capturas son recursos locales; los assets tipográficos y de animación anteriores se conservan con sus licencias, pero no se cargan; no hay peticiones a CDN de fuentes ni analítica.
 
 ```sh
 python3 build.py
@@ -14,13 +14,13 @@ python3 check.py
 python3 -m http.server 8048 --directory docs --bind 127.0.0.1
 ```
 
-Modifica el contenido, el generador de HTML, el CSS o el `docs/motion.js` opcional; después regenera y recarga. `check.py` comprueba claves de traducción, nueve rutas de proyectos/evidencia, recursos locales, contraste calculado y hashes de terceros. No sustituye la revisión en navegador.
+Modifica el contenido, el generador de HTML, el CSS; después regenera y recarga. `check.py` comprueba claves de traducción, nueve rutas de proyectos/evidencia, recursos locales, contraste calculado y hashes de terceros. No sustituye la revisión en navegador.
 
 ## Diseño y comportamiento
 
-[DESIGN.md](DESIGN.md) explica el sistema visual y sus seis disposiciones: introducción con capturas, galería de Rumbo, caso de Bitácora, índice de laboratorios plegable, secuencia de trabajo y enlaces a otros proyectos. Las capturas proceden de las demos Android ejecutadas en API 37 y de iOS Simulator 27.2, en inglés y con datos ficticios. Los paisajes de Rumbo son ilustraciones Canvas originales; ningún concepto generado se presenta como una app ejecutada.
+[DESIGN.md](DESIGN.md) explica el sistema tipográfico IBM Plex Sans, la paleta mineral y azul y las composiciones. Primero aparecen Manuel Naval y sus habilidades: estado/concurrencia, integración/persistencia y pruebas/especificaciones, con enlaces a ejemplos. Babel/Renfe/AWAI aparecen solo en experiencia. El directorio permite explorar nueve proyectos de Android, Flutter, SwiftUI, integración y herramientas. [PRODUCT.md](PRODUCT.md) recoge público y límites. [Impeccable](https://github.com/pbakaus/impeccable) es referencia de diseño; su motor no se instala ni se incorpora a la web.
 
-HTML resuelve la navegación, los enlaces, las regiones de contenido y los controles nativos `details/summary`. GSAP ajusta la escala y la opacidad de las imágenes y fija la introducción del índice en ventanas de escritorio con espacio suficiente. `prefers-reduced-motion` desactiva esos efectos y el movimiento CSS. El contenido y las secciones expandibles siguen funcionando sin JavaScript. Las fuentes y GSAP conservan avisos/licencias propios, separados del código original MIT.
+Las capturas proceden de demos propias en emulador Android API 37 e iOS Simulator 27.2, en inglés y con datos ficticios. La experiencia profesional se describe por separado, sin material corporativo. HTML resuelve navegación, regiones y controles nativos `details/summary`. La página no carga JavaScript; el índice usa sticky CSS en escritorio. Foco, selección, controles y reflow forman parte del sistema. Se conservan avisos y licencias de terceros.
 
 Comprobaciones locales citadas por el rediseño: Rumbo: 35 JVM/9 de emulador y Bitácora: 37 de controlador/widgets más persistencia nativa. Cada repositorio documenta sus límites. Los enlaces a CI llevan a las ejecuciones actuales de cada proyecto. Bitácora SwiftUI añade una demostración iOS nativa con 43 pruebas macOS, dos casos XCTest nativos y evidencia de Simulator. VoiceOver, protección física y tiendas mantienen sus comprobaciones separadas.
 
