@@ -9,15 +9,15 @@
   },
   {
     "path": "README.md",
-    "sha256": "38e12e9aa58aa0e7e64b3c8f0837681f7f51f765aa3461457fc0e626c8ff0c6a"
+    "sha256": "1728ea5f7c078a837900bc17efac26d205658a93e7bda5e17675c8977fbd5de3"
   },
   {
     "path": "README.es.md",
-    "sha256": "097631750fc8d92291987e126cab1992e794a4ce89e97ddcddd56aeaa34f3936"
+    "sha256": "01938cf51464652e4b3d7bbc7b2b228376696da7bdb719e4f3aa9baae51000ed"
   },
   {
     "path": "DESIGN.md",
-    "sha256": "8da627521b3edfe41315fdd6c6b1978e555e4fec3d041df646af9ceeae88e806"
+    "sha256": "e8510a310ff2c23f883262ba67de9f6b449998e4dc349c3088a28a45bd8fe3fa"
   },
   {
     "path": "PRODUCT.md",
@@ -37,27 +37,27 @@
   },
   {
     "path": "content.json",
-    "sha256": "ab3e67bee2a4d44240705af8862b7419175e912b675f170312ed58cd4b53e695"
+    "sha256": "7f36fb235666ebec38b0ca6faa5888c1e0f03d86335dbe86b04a0c04d2d87b17"
   },
   {
     "path": "build.py",
-    "sha256": "3064429a4ae751b16eebbff866a9658560d6689dfb6b7e6464b76f5c88068804"
+    "sha256": "0e34fcbd653ed7e7b7010abee650bb6cf1c2fccc3ee29fa7e656ee4976d87efc"
   },
   {
     "path": "check.py",
-    "sha256": "a2237faf01e118a2ae068866f46c06e4ff69e36bed0419c1954486f4da36c449"
+    "sha256": "63c807d031bd1317512ff0527e152fa60684e04dfbabb0059a96211d95e5fef3"
   },
   {
     "path": "docs/index.html",
-    "sha256": "bd4bc5b7fb7556f87234f444900480bc3984ca3965a5033d21fe3004f7555d8a"
+    "sha256": "8b1df894c238625c21738a1371a3097ea212fd96fcd02b9e3903495e3666cd49"
   },
   {
     "path": "docs/es.html",
-    "sha256": "d39818721c0b47b6efcec2e53548a5459e237f3a0cb90de523e0cc054a578c97"
+    "sha256": "d541c386904494a9b77bcd4648d267af8db05216119449d0e944b54faf18cfce"
   },
   {
     "path": "docs/styles.css",
-    "sha256": "ec3e39d9d74dd15b3c574e6390f7e8426daad40c489a6bb6b22af0b93e3011c8"
+    "sha256": "dfb144cd1075dc96c0ab1f7eac1a6d3aed3a0803fae01e089267d7359403accd"
   },
   {
     "path": "docs/motion.js",

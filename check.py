@@ -63,6 +63,11 @@ def check():
             assert set(row) == {'title', 'body', 'stack', 'target', 'link'}
             assert row['target'] in {project['id'] for project in build.PROJECTS}
             assert all(row.values())
+    assert len(build.CONTENT['earlier_projects']) == 4
+    assert len({p['id'] for p in build.CONTENT['earlier_projects']} | {p['id'] for p in build.PROJECTS}) == 13
+    for project in build.CONTENT['earlier_projects']:
+        assert set(project['en']) == set(project['es']) == {'body', 'scope'}
+        assert all(project[lang][key].strip() for lang in ['en', 'es'] for key in project[lang])
     assert len(build.COPY['en']['steps']) == len(build.COPY['es']['steps']) == 4
     assert set(build.COPY['en']['image_alts']) == set(build.COPY['es']['image_alts'])
     results = []
@@ -86,6 +91,9 @@ def check():
         for p in build.PROJECTS:
             repo = 'https://github.com/navalcode/' + p['id']
             assert repo in page.links and repo + '/actions' in page.links
+        for project in build.CONTENT['earlier_projects']:
+            assert 'https://github.com/navalcode/' + project['id'] in page.links
+        assert text.count('class="earlier-project"') == 4
         assert '#experience' in page.links and 'experience' in page.ids
         assert 'Babel' in text and 'Renfe' in text and 'AWAI' in text
         opening = text.split('<section class="experience chapter"')[0]
@@ -94,7 +102,7 @@ def check():
         assert '<h1 id="home-title">Manuel Naval.</h1>' in text
         assert 'automotive' not in text.lower(), 'restricted sector label in public page'
         assert '#main' in page.links and build.COPY[language]['other_file'] in page.links
-        results.append({'language': language, 'projects': page.articles, 'disclosures': page.disclosures, 'layout_labels': sorted(page.layouts), 'links': len(page.links), 'unique_html_resources': len(set(page.resources))})
+        results.append({'language': language, 'projects': page.articles, 'earlier_projects': 4, 'disclosures': page.disclosures, 'layout_labels': sorted(page.layouts), 'links': len(page.links), 'unique_html_resources': len(set(page.resources))})
     css = (DOCS / 'styles.css').read_text()
     for resource in re.findall(r"url\(['\"]?([^)'\"]+)", css):
         assert not urlsplit(resource).scheme and (DOCS / resource).is_file(), 'invalid CSS resource'

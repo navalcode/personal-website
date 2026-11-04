@@ -254,7 +254,9 @@
           "target": "spec-evidence-lab",
           "link": "Explore Spec Evidence Lab"
         }
-      ]
+      ],
+      "earlier_title": "Beyond the app.",
+      "earlier_intro": "Earlier work in backend, web interfaces and build configuration. These learning projects and experiments retain their original context, shared credits and documented verification limits."
     },
     "es": {
       "other": "English",
@@ -373,7 +375,63 @@
           "target": "spec-evidence-lab",
           "link": "Explorar Spec Evidence Lab"
         }
-      ]
+      ],
+      "earlier_title": "Más allá de la app.",
+      "earlier_intro": "Trabajos anteriores de backend, interfaces web y configuración de compilación. Estos proyectos formativos y experimentos conservan su contexto, los créditos compartidos y los límites de sus comprobaciones."
     }
-  }
+  },
+  "earlier_projects": [
+    {
+      "id": "DojoNavalManuel",
+      "title": "Dojo",
+      "stack": "Java · Spring MVC · Thymeleaf · H2",
+      "en": {
+        "body": "Server-rendered records and forms. Validation preserves drafts, deletions require confirmation and referenced records cannot be removed.",
+        "scope": "Coursework project · local verification recorded in the repository"
+      },
+      "es": {
+        "body": "Gestión de registros y formularios renderizados en servidor. La validación conserva borradores, el borrado requiere confirmación y protege los registros con dependencias.",
+        "scope": "Proyecto formativo · comprobaciones locales documentadas"
+      }
+    },
+    {
+      "id": "Trianafy",
+      "title": "Trianafy",
+      "stack": "Java · Spring · REST · JPA",
+      "en": {
+        "body": "An artists, songs and playlists API. HTTP contracts, relationship updates and transactional deletion without orphaned memberships.",
+        "scope": "Collaborative coursework · original shared credits retained"
+      },
+      "es": {
+        "body": "API de artistas, canciones y listas. Contratos HTTP, actualización de relaciones y borrado transaccional sin dejar asociaciones huérfanas.",
+        "scope": "Proyecto formativo colaborativo · créditos originales conservados"
+      }
+    },
+    {
+      "id": "tabla_angular",
+      "title": "Angular · Student table",
+      "stack": "TypeScript · Angular Material · Reactive forms",
+      "en": {
+        "body": "Column selection, a separate editing draft and validated changes. Language switching preserves the draft; canceling leaves the row unchanged.",
+        "scope": "Learning exercise · in-memory data · historical toolchain"
+      },
+      "es": {
+        "body": "Selección de columnas, borrador de edición independiente y cambios validados. Cambiar de idioma conserva el borrador; cancelar mantiene la fila intacta.",
+        "scope": "Ejercicio formativo · datos en memoria · toolchain histórico"
+      }
+    },
+    {
+      "id": "FlutterVariants",
+      "title": "Flutter Variants",
+      "stack": "Flutter · Dart · Android product flavors",
+      "en": {
+        "body": "Separate development and production entry points, shared configuration and environment-specific assets. A code example of build configuration.",
+        "scope": "Earlier example · execution with current Flutter remains unverified"
+      },
+      "es": {
+        "body": "Puntos de entrada separados para desarrollo y producción, configuración compartida y recursos por entorno. Un ejemplo de configuración de compilación.",
+        "scope": "Ejemplo anterior · ejecución con Flutter actual pendiente de verificar"
+      }
+    }
+  ]
 }

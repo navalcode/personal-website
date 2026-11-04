@@ -50,6 +50,7 @@ def render(language):
     labs = [project for project in PROJECTS if project['id'] not in {'rumbo-android', 'bitacora-flutter', 'bitacora-ios'}]
     steps = ''.join(f'<li><h3>{e(heading)}</h3><p>{e(body)}</p></li>' for heading, body in c['steps'])
     contexts = ''.join(f'<div class="experience-context"><h3>{e(item["name"])}</h3><p class="context-area">{e(item["area"])}</p><p>{e(item["body"])}</p></div>' for item in c['experience_contexts'])
+    earlier_rows = ''.join(f'<li class="earlier-project"><div><h3>{e(project["title"])}</h3><p class="stack">{e(project["stack"])}</p></div><div><p>{e(project[language]["body"])}</p><p class="reading-note">{e(project[language]["scope"])}</p></div><a href="https://github.com/navalcode/{project["id"]}">{e(c["source_short"])} {arrow()}<span class="sr-only"> · {e(project["title"])}</span></a></li>' for project in CONTENT['earlier_projects'])
     technical_rows = ''.join(f'<div class="technical-row"><dt>{e(row["title"])}</dt><dd><p>{e(row["body"])}</p><p class="stack">{e(row["stack"])}</p><a href="#{row["target"]}">{e(row["link"])} {arrow()}</a></dd></div>' for row in c['technical_rows'])
     project_index = ''.join(f'<a href="#{project["id"]}"><span>{e(project["title"])}</span>{arrow()}</a>' for project in PROJECTS)
     return f'''<!doctype html>
@@ -98,6 +99,7 @@ def render(language):
 <section class="lab-index chapter" id="labs" aria-labelledby="labs-title" data-layout="expandable-index">
 <div class="lab-intro"><h2 id="labs-title">{e(c['lab_title'])}</h2><p>{e(c['lab_intro'])}</p><p class="reading-note">{e(c['lab_hint'])}</p></div><div class="lab-list">{''.join(lab(project) for project in labs)}</div>
 </section>
+<section class="earlier-work chapter" aria-labelledby="earlier-title" data-layout="earlier-projects"><div class="earlier-heading"><h2 id="earlier-title">{e(c['earlier_title'])}</h2><p>{e(c['earlier_intro'])}</p></div><ul class="earlier-list">{earlier_rows}</ul></section>
 <section class="approach chapter" id="approach" aria-labelledby="approach-title" data-layout="open-sequence">
 <div class="approach-head"><h2 id="approach-title">{e(c['method_title'])}</h2><p>{e(c['method_intro'])}</p></div><ol class="method-sequence">{steps}</ol><a class="method-link" href="https://github.com/navalcode/spec-evidence-lab">{e(c['method_link'])} {arrow()}</a>
 </section>
