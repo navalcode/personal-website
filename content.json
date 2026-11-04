@@ -208,19 +208,19 @@
       "ios_detail_caption": "Task detail",
       "experience": "Experience",
       "experience_title": "Experience across different contexts.",
-      "experience_intro": "At Babel, I work across mobile development, maintenance and integration. Sales and transport bring business context; advanced technology brings the challenge of connecting applications and systems.",
-      "experience_role": "Mobile development at Babel",
-      "experience_body": "From understanding a requirement to maintaining the application: turning business needs into clear behavior, reviewing implementation choices and making room for failure and recovery.",
+      "experience_intro": "My work at Babel spans mobile applications, integration and technical research, with contributions to solution definition and the tools the team works with.",
+      "experience_role": "Development and integration at Babel",
+      "experience_body": "Android development and maintenance, SDK and service integration, and diagnosing compatibility, concurrency and lifecycle issues. I also evaluate technical alternatives and document decisions so work can continue with context.",
       "experience_contexts": [
         {
           "name": "Renfe",
           "area": "Sales & rail transport",
-          "body": "Experience in the sales and rail transport domain, where business processes and a clear digital experience need to work together."
+          "body": "Android application development and maintenance in sales and rail transport, with attention to compatibility, integrations and error recovery."
         },
         {
           "name": "AWAI",
           "area": "Advanced technology & integration",
-          "body": "Work with advanced technologies and connected applications, looking beyond the screen to how the wider system behaves."
+          "body": "Development and evolution of connected applications: SDK and service integration, session handling, background work coordination and platform diagnosis."
         }
       ],
       "experience_note": "These are professional contexts. The projects below are independent examples with original code and fictional data.",
@@ -255,8 +255,20 @@
           "link": "Explore Spec Evidence Lab"
         }
       ],
-      "earlier_title": "Beyond the app.",
-      "earlier_intro": "Earlier work in backend, web interfaces and build configuration. These learning projects and experiments retain their original context, shared credits and documented verification limits."
+      "professional_contributions": [
+        {
+          "title": "Applied research",
+          "body": "Proofs of concept to assess technical feasibility, integration with native components and diagnosis based on data and system behavior."
+        },
+        {
+          "title": "Solution definition",
+          "body": "I contribute to technical proposals: requirements analysis, scope, solution alternatives, dependencies and risks."
+        },
+        {
+          "title": "Technical collaboration & AI",
+          "body": "I support technical profile assessment through code and Android requirements. I contribute to shared AI-assisted development resources, including reusable instructions, MCP tools and documentation."
+        }
+      ]
     },
     "es": {
       "other": "English",
@@ -329,19 +341,19 @@
       "ios_detail_caption": "Detalle de tarea",
       "experience": "Experiencia",
       "experience_title": "Experiencia en distintos contextos.",
-      "experience_intro": "En Babel, mi recorrido combina desarrollo móvil, mantenimiento e integración. Las ventas y el transporte aportan contexto de negocio; las tecnologías avanzadas, el reto de conectar aplicaciones y sistemas.",
-      "experience_role": "Desarrollo móvil en Babel",
-      "experience_body": "Desde entender una necesidad hasta mantener la aplicación: traducir el negocio a comportamientos claros, revisar las decisiones de implementación y contemplar los fallos y la recuperación.",
+      "experience_intro": "Mi recorrido en Babel combina aplicaciones móviles, integración e investigación técnica, con aportaciones a la definición de soluciones y a las herramientas de trabajo del equipo.",
+      "experience_role": "Desarrollo e integración en Babel",
+      "experience_body": "Desarrollo y mantenimiento Android, integración de SDK y servicios, y resolución de problemas de compatibilidad, concurrencia y ciclo de vida. También evalúo alternativas técnicas y documento decisiones para dar continuidad al trabajo.",
       "experience_contexts": [
         {
           "name": "Renfe",
           "area": "Ventas y transporte ferroviario",
-          "body": "Experiencia en el ámbito de las ventas y el transporte ferroviario, donde los procesos de negocio y una experiencia digital clara tienen que funcionar juntos."
+          "body": "Evolutivos y mantenimiento de aplicaciones Android en el ámbito de las ventas y el transporte ferroviario, con atención a la compatibilidad, las integraciones y la recuperación de errores."
         },
         {
           "name": "AWAI",
           "area": "Tecnologías avanzadas e integración",
-          "body": "Trabajo con tecnologías avanzadas y aplicaciones conectadas, con una mirada que va más allá de la pantalla y alcanza el comportamiento del sistema."
+          "body": "Desarrollo y evolución de aplicaciones conectadas: integración de SDK y servicios, gestión de sesiones, coordinación del trabajo en segundo plano y diagnóstico de problemas de plataforma."
         }
       ],
       "experience_note": "Estos son contextos profesionales. Los proyectos de abajo son ejemplos independientes con código original y datos ficticios.",
@@ -376,62 +388,20 @@
           "link": "Explorar Spec Evidence Lab"
         }
       ],
-      "earlier_title": "Más allá de la app.",
-      "earlier_intro": "Trabajos anteriores de backend, interfaces web y configuración de compilación. Estos proyectos formativos y experimentos conservan su contexto, los créditos compartidos y los límites de sus comprobaciones."
+      "professional_contributions": [
+        {
+          "title": "Investigación aplicada",
+          "body": "Pruebas de concepto para contrastar viabilidad técnica, integración con componentes nativos y diagnóstico a partir de datos y del comportamiento de los sistemas."
+        },
+        {
+          "title": "Definición de soluciones",
+          "body": "Colaboro en propuestas técnicas: análisis de necesidades, alcance, alternativas de solución, dependencias y riesgos."
+        },
+        {
+          "title": "Colaboración técnica e IA",
+          "body": "Apoyo a la valoración técnica de perfiles a partir de código y requisitos Android. Contribuyo a recursos compartidos de desarrollo asistido por IA, con instrucciones reutilizables, herramientas MCP y documentación."
+        }
+      ]
     }
-  },
-  "earlier_projects": [
-    {
-      "id": "DojoNavalManuel",
-      "title": "Dojo",
-      "stack": "Java · Spring MVC · Thymeleaf · H2",
-      "en": {
-        "body": "Server-rendered records and forms. Validation preserves drafts, deletions require confirmation and referenced records cannot be removed.",
-        "scope": "Coursework project · local verification recorded in the repository"
-      },
-      "es": {
-        "body": "Gestión de registros y formularios renderizados en servidor. La validación conserva borradores, el borrado requiere confirmación y protege los registros con dependencias.",
-        "scope": "Proyecto formativo · comprobaciones locales documentadas"
-      }
-    },
-    {
-      "id": "Trianafy",
-      "title": "Trianafy",
-      "stack": "Java · Spring · REST · JPA",
-      "en": {
-        "body": "An artists, songs and playlists API. HTTP contracts, relationship updates and transactional deletion without orphaned memberships.",
-        "scope": "Collaborative coursework · original shared credits retained"
-      },
-      "es": {
-        "body": "API de artistas, canciones y listas. Contratos HTTP, actualización de relaciones y borrado transaccional sin dejar asociaciones huérfanas.",
-        "scope": "Proyecto formativo colaborativo · créditos originales conservados"
-      }
-    },
-    {
-      "id": "tabla_angular",
-      "title": "Angular · Student table",
-      "stack": "TypeScript · Angular Material · Reactive forms",
-      "en": {
-        "body": "Column selection, a separate editing draft and validated changes. Language switching preserves the draft; canceling leaves the row unchanged.",
-        "scope": "Learning exercise · in-memory data · historical toolchain"
-      },
-      "es": {
-        "body": "Selección de columnas, borrador de edición independiente y cambios validados. Cambiar de idioma conserva el borrador; cancelar mantiene la fila intacta.",
-        "scope": "Ejercicio formativo · datos en memoria · toolchain histórico"
-      }
-    },
-    {
-      "id": "FlutterVariants",
-      "title": "Flutter Variants",
-      "stack": "Flutter · Dart · Android product flavors",
-      "en": {
-        "body": "Separate development and production entry points, shared configuration and environment-specific assets. A code example of build configuration.",
-        "scope": "Earlier example · execution with current Flutter remains unverified"
-      },
-      "es": {
-        "body": "Puntos de entrada separados para desarrollo y producción, configuración compartida y recursos por entorno. Un ejemplo de configuración de compilación.",
-        "scope": "Ejemplo anterior · ejecución con Flutter actual pendiente de verificar"
-      }
-    }
-  ]
+  }
 }

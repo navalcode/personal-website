@@ -9,19 +9,19 @@
   },
   {
     "path": "README.md",
-    "sha256": "1728ea5f7c078a837900bc17efac26d205658a93e7bda5e17675c8977fbd5de3"
+    "sha256": "38e12e9aa58aa0e7e64b3c8f0837681f7f51f765aa3461457fc0e626c8ff0c6a"
   },
   {
     "path": "README.es.md",
-    "sha256": "01938cf51464652e4b3d7bbc7b2b228376696da7bdb719e4f3aa9baae51000ed"
+    "sha256": "097631750fc8d92291987e126cab1992e794a4ce89e97ddcddd56aeaa34f3936"
   },
   {
     "path": "DESIGN.md",
-    "sha256": "e8510a310ff2c23f883262ba67de9f6b449998e4dc349c3088a28a45bd8fe3fa"
+    "sha256": "f9f7cefc9f41ea7ff8bb240358383b21800fbc0db18cc67b0f744dbd6142b1c5"
   },
   {
     "path": "PRODUCT.md",
-    "sha256": "a6b2ae458f539f344c35c6447155de800e5c86dc930b49c915846886d88374a5"
+    "sha256": "a01e645b8dfd8990f89cc092c07125c36847b0595d6e6bb7ba18ad27d5089224"
   },
   {
     "path": "THIRD_PARTY.md",
@@ -37,27 +37,27 @@
   },
   {
     "path": "content.json",
-    "sha256": "7f36fb235666ebec38b0ca6faa5888c1e0f03d86335dbe86b04a0c04d2d87b17"
+    "sha256": "5b777ae4c770435b16c2fa73630b35ada07a96ba67e0795a1c7ed467c4de84d8"
   },
   {
     "path": "build.py",
-    "sha256": "0e34fcbd653ed7e7b7010abee650bb6cf1c2fccc3ee29fa7e656ee4976d87efc"
+    "sha256": "d41f435ac82b1a2d58b677a2f005c85df3ee30caebcfbad8a033c5d93b930a04"
   },
   {
     "path": "check.py",
-    "sha256": "63c807d031bd1317512ff0527e152fa60684e04dfbabb0059a96211d95e5fef3"
+    "sha256": "975a6dfb7a5f44122d0b093888058cdece3735803a6af7baaa7a8e72ca7afb16"
   },
   {
     "path": "docs/index.html",
-    "sha256": "8b1df894c238625c21738a1371a3097ea212fd96fcd02b9e3903495e3666cd49"
+    "sha256": "303176c6f0d4cae7d323875fdcdb9ac0e5245e4506df2ea0d2a15d6bde3ca298"
   },
   {
     "path": "docs/es.html",
-    "sha256": "d541c386904494a9b77bcd4648d267af8db05216119449d0e944b54faf18cfce"
+    "sha256": "6e97e64c5383b7f25be708234aac5017e8bcbcc022b9ed5f8a70457f5bfd27f5"
   },
   {
     "path": "docs/styles.css",
-    "sha256": "dfb144cd1075dc96c0ab1f7eac1a6d3aed3a0803fae01e089267d7359403accd"
+    "sha256": "2f1777c4c887159c9504b8a4ed7201c629878e9b2f77c92ca1df206e6d62fe22"
   },
   {
     "path": "docs/motion.js",
